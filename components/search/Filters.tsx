@@ -16,9 +16,7 @@ interface Props {
 const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
 
-function ValueItem(
-  { url, selected, label, quantity }: FilterToggleValue,
-) {
+function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
   return (
     <a href={url} rel="nofollow" class="flex items-center gap-2">
       <div aria-checked={selected} class="checkbox" />
@@ -33,7 +31,7 @@ function FilterValues({ key, values }: FilterToggle) {
   const flexDirection = avatars ? "flex-row items-center" : "flex-col";
 
   return (
-    <ul class={clx(`flex flex-wrap gap-2`, flexDirection)}>
+    <ul class={clx("flex flex-wrap gap-2", flexDirection)}>
       {values.map((item) => {
         const { url, selected, value } = item;
 
@@ -51,11 +49,13 @@ function FilterValues({ key, values }: FilterToggle) {
         if (key === "price") {
           const range = parseRange(item.value);
 
-          return range && (
-            <ValueItem
-              {...item}
-              label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
-            />
+          return (
+            range && (
+              <ValueItem
+                {...item}
+                label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
+              />
+            )
           );
         }
 
@@ -68,14 +68,12 @@ function FilterValues({ key, values }: FilterToggle) {
 function Filters({ filters }: Props) {
   return (
     <ul class="flex flex-col gap-6 p-4 sm:p-0">
-      {filters
-        .filter(isToggle)
-        .map((filter) => (
-          <li class="flex flex-col gap-4">
-            <span>{filter.label}</span>
-            <FilterValues {...filter} />
-          </li>
-        ))}
+      {filters.filter(isToggle).map((filter) => (
+        <li class="flex flex-col gap-4">
+          <span>{filter.label}</span>
+          <FilterValues {...filter} />
+        </li>
+      ))}
     </ul>
   );
 }

@@ -1,10 +1,10 @@
-import { AnalyticsItem } from "apps/commerce/types.ts";
+import { useScript } from "@deco/deco/hooks";
+import type { AnalyticsItem } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import Icon from "../ui/Icon.tsx";
 import QuantitySelector from "../ui/QuantitySelector.tsx";
-import { useScript } from "@deco/deco/hooks";
 export type Item = AnalyticsItem & {
   listPrice: number;
   image: string;
@@ -17,15 +17,15 @@ export interface Props {
 }
 const QUANTITY_MAX_VALUE = 100;
 const removeItemHandler = () => {
-  const itemID = (event?.currentTarget as HTMLButtonElement | null)
-    ?.closest("fieldset")
-    ?.getAttribute("data-item-id");
+  const itemID = (event?.currentTarget as HTMLButtonElement | null)?.closest(
+    "fieldset",
+  )?.getAttribute("data-item-id");
   if (typeof itemID === "string") {
     window.STOREFRONT.CART.setQuantity(itemID, 0);
   }
 };
 function CartItem({ item, index, locale, currency }: Props) {
-  const { image, listPrice, price = Infinity, quantity } = item;
+  const { image, listPrice, price = Number.POSITIVE_INFINITY, quantity } = item;
   const isGift = price < 0.01;
   // deno-lint-ignore no-explicit-any
   const name = (item as any).item_name;

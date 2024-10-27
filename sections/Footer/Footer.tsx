@@ -1,4 +1,4 @@
-import { type ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 import Section from "../../components/ui/Section.tsx";
@@ -30,14 +30,16 @@ interface Props {
   trademark?: string;
 }
 
-function Footer({
-  links = [],
-  social = [],
-  policies = [],
-  paymentMethods = [],
-  logo,
-  trademark,
-}: Props) {
+function Footer(
+  {
+    links = [],
+    social = [],
+    policies = [],
+    paymentMethods = [],
+    logo,
+    trademark,
+  }: Props,
+) {
   return (
     <footer
       class="px-5 sm:px-0 mt-5 sm:mt-10"
@@ -47,7 +49,9 @@ function Footer({
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
-              <a class="text-base font-semibold" href={href}>{title}</a>
+              <a class="text-base font-semibold" href={href}>
+                {title}
+              </a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href }) => (
                   <li>

@@ -1,5 +1,5 @@
-import { ProductListingPage } from "apps/commerce/types.ts";
 import { useScript } from "@deco/deco/hooks";
+import type { ProductListingPage } from "apps/commerce/types.ts";
 const SORT_QUERY_PARAM = "sort";
 const PAGE_QUERY_PARAM = "page";
 export type Props = Pick<ProductListingPage, "sortOptions"> & {
@@ -32,12 +32,14 @@ function Sort({ sortOptions, url }: Props) {
   }));
   return (
     <>
-      <label for="sort" class="sr-only">Sort by</label>
+      <label for="sort" class="sr-only">
+        Sort by
+      </label>
       <select
         name="sort"
         class="select w-full max-w-sm rounded-lg"
         hx-on:change={useScript(() => {
-          const select = event!.currentTarget as HTMLSelectElement;
+          const select = event?.currentTarget as HTMLSelectElement;
           window.location.href = select.value;
         })}
       >

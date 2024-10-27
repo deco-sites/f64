@@ -1,12 +1,13 @@
 import { itemToAnalyticsItem } from "apps/vnda/hooks/useCart.ts";
 import type a from "apps/vnda/loaders/cart.ts";
-import { AppContext } from "apps/vnda/mod.ts";
-import { Minicart } from "../../../components/minicart/Minicart.tsx";
+import type { AppContext } from "apps/vnda/mod.ts";
+import type { Minicart } from "../../../components/minicart/Minicart.tsx";
 
 export type Cart = Awaited<ReturnType<typeof a>>;
 
-const normalizeUrl = (url: string) =>
-  url.startsWith("//") ? `https:${url}` : url;
+const normalizeUrl = (
+  url: string,
+) => (url.startsWith("//") ? `https:${url}` : url);
 
 const locale = "pt-BR";
 const currency = "BRL";

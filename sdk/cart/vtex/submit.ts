@@ -1,5 +1,5 @@
-import { type AppContext } from "apps/vtex/mod.ts";
-import { type CartSubmitActions } from "../../../actions/minicart/submit.ts";
+import type { AppContext } from "apps/vtex/mod.ts";
+import type { CartSubmitActions } from "../../../actions/minicart/submit.ts";
 import { cartFrom } from "./loader.ts";
 
 const actions: CartSubmitActions<AppContext> = {
@@ -13,21 +13,17 @@ const actions: CartSubmitActions<AppContext> = {
     return cartFrom(response, req.url);
   },
   setQuantity: async ({ items }, req, ctx) => {
-    const response = await ctx.invoke(
-      "vtex/actions/cart/updateItems.ts",
-      {
-        allowedOutdatedData: ["paymentData"],
-        orderItems: items.map((quantity, index) => ({ quantity, index })),
-      },
-    );
+    const response = await ctx.invoke("vtex/actions/cart/updateItems.ts", {
+      allowedOutdatedData: ["paymentData"],
+      orderItems: items.map((quantity, index) => ({ quantity, index })),
+    });
 
     return cartFrom(response, req.url);
   },
   setCoupon: async ({ coupon }, req, ctx) => {
-    const response = await ctx.invoke(
-      "vtex/actions/cart/updateCoupons.ts",
-      { text: coupon ?? undefined },
-    );
+    const response = await ctx.invoke("vtex/actions/cart/updateCoupons.ts", {
+      text: coupon ?? undefined,
+    });
 
     return cartFrom(response, req.url);
   },

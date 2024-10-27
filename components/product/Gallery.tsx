@@ -1,10 +1,10 @@
-import { ProductDetailsPage } from "apps/commerce/types.ts";
+import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import ProductImageZoom from "./ProductImageZoom.tsx";
-import Icon from "../ui/Icon.tsx";
-import Slider from "../ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
+import Icon from "../ui/Icon.tsx";
+import Slider from "../ui/Slider.tsx";
+import ProductImageZoom from "./ProductImageZoom.tsx";
 
 export interface Props {
   /** @title Integration */
@@ -29,7 +29,11 @@ export default function GallerySlider(props: Props) {
     throw new Error("Missing Product Details Page Info");
   }
 
-  const { page: { product: { name, isVariantOf, image: pImages } } } = props;
+  const {
+    page: {
+      product: { name, isVariantOf, image: pImages },
+    },
+  } = props;
 
   // Filter images when image's alt text matches product name
   // More info at: https://community.shopify.com/c/shopify-discussions/i-can-not-add-multiple-pictures-for-my-variants/m-p/2416533
@@ -50,10 +54,7 @@ export default function GallerySlider(props: Props) {
           <div class="relative h-min flex-grow">
             <Slider class="carousel carousel-center gap-6 w-full">
               {images.map((img, index) => (
-                <Slider.Item
-                  index={index}
-                  class="carousel-item w-full"
-                >
+                <Slider.Item index={index} class="carousel-item w-full">
                   <Image
                     class="w-full"
                     sizes="(max-width: 640px) 100vw, 40vw"
@@ -128,7 +129,7 @@ export default function GallerySlider(props: Props) {
         id={zoomId}
         images={images}
         width={700}
-        height={Math.trunc(700 * HEIGHT / WIDTH)}
+        height={Math.trunc((700 * HEIGHT) / WIDTH)}
       />
     </>
   );

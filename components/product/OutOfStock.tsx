@@ -1,5 +1,5 @@
 import type { Product } from "apps/commerce/types.ts";
-import { AppContext } from "../../apps/site.ts";
+import type { AppContext } from "../../apps/site.ts";
 import { useComponent } from "../../sections/Component.tsx";
 
 export interface Props {

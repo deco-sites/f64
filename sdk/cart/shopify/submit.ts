@@ -1,5 +1,5 @@
-import { type AppContext } from "apps/shopify/mod.ts";
-import { type CartSubmitActions } from "../../../actions/minicart/submit.ts";
+import type { AppContext } from "apps/shopify/mod.ts";
+import type { CartSubmitActions } from "../../../actions/minicart/submit.ts";
 import { type Cart, cartFrom } from "./loader.ts";
 
 const actions: CartSubmitActions<AppContext> = {
@@ -36,10 +36,9 @@ const actions: CartSubmitActions<AppContext> = {
     return cartFrom(response);
   },
   setCoupon: async ({ coupon }, _req, ctx) => {
-    const response = await ctx.invoke(
-      "shopify/actions/cart/updateCoupons.ts",
-      { discountCodes: [coupon ?? ""] },
-    );
+    const response = await ctx.invoke("shopify/actions/cart/updateCoupons.ts", {
+      discountCodes: [coupon ?? ""],
+    });
 
     return cartFrom(response);
   },

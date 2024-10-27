@@ -1,8 +1,8 @@
-import { type ComponentChildren } from "preact";
+import { useScript } from "@deco/deco/hooks";
+import type { ComponentChildren } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import Icon from "./Icon.tsx";
-import { useScript } from "@deco/deco/hooks";
 export interface Props {
   open?: boolean;
   class?: string;
@@ -38,9 +38,7 @@ function Drawer(
           aria-label={open ? "open drawer" : "closed drawer"}
         />
 
-        <div class="drawer-content">
-          {children}
-        </div>
+        <div class="drawer-content">{children}</div>
 
         <aside
           data-aside
@@ -60,7 +58,11 @@ function Drawer(
     </>
   );
 }
-function Aside({ title, drawer, children }: {
+function Aside({
+  title,
+  drawer,
+  children,
+}: {
   title: string;
   drawer: string;
   children: ComponentChildren;

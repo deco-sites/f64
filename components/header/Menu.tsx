@@ -1,5 +1,5 @@
-import Icon from "../../components/ui/Icon.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import Icon from "../../components/ui/Icon.tsx";
 
 export interface Props {
   navItems?: SiteNavigationElement[];
@@ -13,7 +13,9 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
       <div class="collapse-content">
         <ul>
           <li>
-            <a class="underline text-sm" href={item.url}>Ver todos</a>
+            <a class="underline text-sm" href={item.url}>
+              Ver todos
+            </a>
           </li>
           {item.children?.map((node) => (
             <li>
@@ -42,10 +44,7 @@ function Menu({ navItems = [] }: Props) {
 
       <ul class="flex flex-col py-2 bg-base-200">
         <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
+          <a class="flex items-center gap-4 px-4 py-2" href="/wishlist">
             <Icon id="favorite" />
             <span class="text-sm">Lista de desejos</span>
           </a>

@@ -1,7 +1,7 @@
 import { itemToAnalyticsItem } from "apps/wake/hooks/useCart.ts";
 import type a from "apps/wake/loaders/cart.ts";
-import { AppContext } from "apps/wake/mod.ts";
-import { Minicart } from "../../../components/minicart/Minicart.tsx";
+import type { AppContext } from "apps/wake/mod.ts";
+import type { Minicart } from "../../../components/minicart/Minicart.tsx";
 
 export type Cart = Awaited<ReturnType<typeof a>>;
 
@@ -18,8 +18,8 @@ export const cartFrom = (cart: Cart): Minicart => {
     platformCart: cart as unknown as Record<string, unknown>,
     storefront: {
       items: items?.map((item, index) => ({
-        image: item!.imageUrl ?? "",
-        listPrice: item!.listPrice!,
+        image: item?.imageUrl ?? "",
+        listPrice: item?.listPrice!,
         ...itemToAnalyticsItem(item!, index),
       })),
       total,
@@ -29,7 +29,7 @@ export const cartFrom = (cart: Cart): Minicart => {
       locale,
       currency,
       freeShippingTarget: 1000,
-      checkoutHref: `/checkout`,
+      checkoutHref: "/checkout",
     },
   };
 };

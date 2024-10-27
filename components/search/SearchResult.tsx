@@ -1,3 +1,5 @@
+import type { SectionProps } from "@deco/deco";
+import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductCard from "../../components/product/ProductCard.tsx";
@@ -10,8 +12,6 @@ import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import Breadcrumb from "../ui/Breadcrumb.tsx";
 import Drawer from "../ui/Drawer.tsx";
 import Sort from "./Sort.tsx";
-import { useDevice, useScript, useSection } from "@deco/deco/hooks";
-import { type SectionProps } from "@deco/deco";
 export interface Layout {
   /**
    * @title Pagination
@@ -80,9 +80,7 @@ function PageResult(props: SectionProps<typeof loader>) {
           hx-swap="outerHTML show:parent:top"
           hx-get={partialPrev}
         >
-          <span class="inline [.htmx-request_&]:hidden">
-            Show Less
-          </span>
+          <span class="inline [.htmx-request_&]:hidden">Show Less</span>
           <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
         </a>
       </div>
@@ -120,9 +118,7 @@ function PageResult(props: SectionProps<typeof loader>) {
                 hx-swap="outerHTML show:parent:top"
                 hx-get={partialNext}
               >
-                <span class="inline [.htmx-request_&]:hidden">
-                  Show More
-                </span>
+                <span class="inline [.htmx-request_&]:hidden">Show More</span>
                 <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
               </a>
             </div>
@@ -199,7 +195,7 @@ function Result(props: SectionProps<typeof loader>) {
         item_list_id: breadcrumb.itemListElement?.at(-1)?.item,
         items: page.products?.map((product, index) =>
           mapProductToAnalyticsItem({
-            ...(useOffer(product.offers)),
+            ...useOffer(product.offers),
             index: offset + index,
             product,
             breadcrumbList: page.breadcrumb,
@@ -272,9 +268,7 @@ function Result(props: SectionProps<typeof loader>) {
                   {device === "desktop" && (
                     <div class="flex justify-between items-center">
                       {results}
-                      <div>
-                        {sortBy}
-                      </div>
+                      <div>{sortBy}</div>
                     </div>
                   )}
                   <PageResult {...props} />

@@ -1,5 +1,5 @@
-import { type AppContext } from "apps/nuvemshop/mod.ts";
-import { type CartSubmitActions } from "../../../actions/minicart/submit.ts";
+import type { AppContext } from "apps/nuvemshop/mod.ts";
+import type { CartSubmitActions } from "../../../actions/minicart/submit.ts";
 import { type Cart, cartFrom } from "./loader.ts";
 
 const actions: CartSubmitActions<AppContext> = {
@@ -27,8 +27,7 @@ const actions: CartSubmitActions<AppContext> = {
     };
 
     if (
-      typeof props.itemId !== "string" ||
-      typeof props.quantity !== "number"
+      typeof props.itemId !== "string" || typeof props.quantity !== "number"
     ) {
       throw new Error(
         "Unreachable code. This is probably a bug. Please report it to the developers.",

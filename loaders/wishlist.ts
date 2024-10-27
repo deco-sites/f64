@@ -1,9 +1,9 @@
-import { AppContext } from "../apps/site.ts";
-import { type Wishlist } from "../components/wishlist/Provider.tsx";
+import type { AppContext } from "../apps/site.ts";
+import type { Wishlist } from "../components/wishlist/Provider.tsx";
 import { usePlatform } from "../sdk/usePlatform.tsx";
 
-import { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
-import { AppContext as AppContextWAKE } from "apps/wake/mod.ts";
+import type { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
+import type { AppContext as AppContextWAKE } from "apps/wake/mod.ts";
 
 async function loader(
   _: unknown,
@@ -15,7 +15,9 @@ async function loader(
   if (platform === "vtex") {
     const response = await (ctx as unknown as AppContextVTEX).invoke(
       "vtex/loaders/wishlist.ts",
-      { count: Infinity },
+      {
+        count: Number.POSITIVE_INFINITY,
+      },
     );
 
     return {

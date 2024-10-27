@@ -1,7 +1,7 @@
-import Image from "apps/website/components/Image.tsx";
+import type { Section } from "@deco/deco/blocks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 import S from "../../components/ui/Section.tsx";
-import { type Section } from "@deco/deco/blocks";
 export interface Props {
   section: Section;
   image: {

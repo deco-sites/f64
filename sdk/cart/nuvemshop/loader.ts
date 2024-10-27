@@ -1,7 +1,7 @@
 import { itemToAnalyticsItem } from "apps/nuvemshop/hooks/useCart.ts";
 import type a from "apps/nuvemshop/loaders/cart.ts";
-import { AppContext } from "apps/nuvemshop/mod.ts";
-import { Minicart } from "../../../components/minicart/Minicart.tsx";
+import type { AppContext } from "apps/nuvemshop/mod.ts";
+import type { Minicart } from "../../../components/minicart/Minicart.tsx";
 
 export type Cart = Awaited<ReturnType<typeof a>>;
 

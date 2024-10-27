@@ -1,7 +1,10 @@
+import { useScript } from "@deco/deco/hooks";
 import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
-import { useScript } from "@deco/deco/hooks";
-function Dot({ index, ...props }: {
+function Dot({
+  index,
+  ...props
+}: {
   index: number;
 } & JSX.IntrinsicElements["button"]) {
   return (
@@ -16,25 +19,19 @@ function Dot({ index, ...props }: {
 function Slider(props: JSX.IntrinsicElements["ul"]) {
   return <ul data-slider {...props} />;
 }
-function Item({ index, ...props }: JSX.IntrinsicElements["li"] & {
+function Item({
+  index,
+  ...props
+}: JSX.IntrinsicElements["li"] & {
   index: number;
 }) {
   return <li data-slider-item={index} {...props} />;
 }
 function NextButton(props: JSX.IntrinsicElements["button"]) {
-  return (
-    <button
-      disabled
-      data-slide="next"
-      aria-label="Next item"
-      {...props}
-    />
-  );
+  return <button data-slide="next" aria-label="Next item" {...props} />;
 }
 function PrevButton(props: JSX.IntrinsicElements["button"]) {
-  return (
-    <button disabled data-slide="prev" aria-label="Previous item" {...props} />
-  );
+  return <button data-slide="prev" aria-label="Previous item" {...props} />;
 }
 export interface Props {
   rootId: string;
@@ -76,7 +73,12 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     if (!root || !slider || !items || items.length === 0) {
       console.warn(
         "Missing necessary slider attributes. It will not work as intended. Necessary elements:",
-        { root, slider, items, rootId },
+        {
+          root,
+          slider,
+          items,
+          rootId,
+        },
       );
       return;
     }

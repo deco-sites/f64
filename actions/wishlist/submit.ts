@@ -1,8 +1,8 @@
-import { type AppContext } from "../../apps/site.ts";
-import { type Wishlist } from "../../components/wishlist/Provider.tsx";
+import type { AppContext } from "../../apps/site.ts";
+import type { Wishlist } from "../../components/wishlist/Provider.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 
-import { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
+import type { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
 
 interface Props {
   productID: string;
@@ -25,14 +25,13 @@ async function action(
 
     try {
       const response = item
-        ? await vtex.invoke(
-          "vtex/actions/wishlist/removeItem.ts",
-          { id: item.id },
-        )
-        : await vtex.invoke(
-          "vtex/actions/wishlist/addItem.ts",
-          { sku: productID, productId: productGroupID },
-        );
+        ? await vtex.invoke("vtex/actions/wishlist/removeItem.ts", {
+          id: item.id,
+        })
+        : await vtex.invoke("vtex/actions/wishlist/addItem.ts", {
+          sku: productID,
+          productId: productGroupID,
+        });
 
       return {
         productIDs: response.map((item) => item.sku),

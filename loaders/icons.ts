@@ -1,3 +1,4 @@
+import { allowCorsFor, type FnContext } from "@deco/deco";
 import {
   AlignCenter,
   AlignLeft,
@@ -10,7 +11,6 @@ import {
   Right,
   Uppercase,
 } from "../static/adminIcons.ts";
-import { allowCorsFor, type FnContext } from "@deco/deco";
 const icons = [
   { component: Left, label: "Left", prop: "alignment" },
   { component: Center, label: "Center", prop: "alignment" },

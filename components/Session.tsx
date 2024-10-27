@@ -1,14 +1,14 @@
 import { Head } from "$fresh/runtime.ts";
-import { type Person } from "apps/commerce/types.ts";
-import { type AppContext } from "../apps/site.ts";
+import { useScript } from "@deco/deco/hooks";
+import type { Person } from "apps/commerce/types.ts";
+import type { AppContext } from "../apps/site.ts";
 import { MINICART_DRAWER_ID } from "../constants.ts";
 import { useComponent } from "../sections/Component.tsx";
-import { type Item } from "./minicart/Item.tsx";
+import type { Item } from "./minicart/Item.tsx";
 import CartProvider, { type Minicart } from "./minicart/Minicart.tsx";
 import Drawer from "./ui/Drawer.tsx";
 import UserProvider from "./user/Provider.tsx";
 import WishlistProvider, { type Wishlist } from "./wishlist/Provider.tsx";
-import { useScript } from "@deco/deco/hooks";
 declare global {
   interface Window {
     STOREFRONT: SDK;
@@ -72,9 +72,10 @@ const sdk = () => {
         const input = form?.querySelector<HTMLInputElement>(
           `[data-item-id="${itemId}"] input[type="number"]`,
         );
-        const item = getCart()?.items.find((item) =>
-          // deno-lint-ignore no-explicit-any
-          (item as any).item_id === itemId
+        const item = getCart()?.items.find(
+          (item) =>
+            // deno-lint-ignore no-explicit-any
+            (item as any).item_id === itemId,
         );
         if (!input || !item) {
           return false;
@@ -144,18 +145,21 @@ const sdk = () => {
             if (!isIntersecting) {
               continue;
             }
-            handleView!.unobserve(target);
+            handleView?.unobserve(target);
             sendEvent(target);
           }
         })
         : null;
       document.body.addEventListener("htmx:load", (e) =>
-        (e as unknown as {
-          detail: {
-            elt: HTMLElement;
-          };
-        })
-          .detail.elt.querySelectorAll("[data-event]").forEach((node) => {
+        (
+          e as unknown as {
+            detail: {
+              elt: HTMLElement;
+            };
+          }
+        ).detail.elt
+          .querySelectorAll("[data-event]")
+          .forEach((node) => {
             const maybeTrigger = node.getAttribute("data-event-trigger");
             const on = maybeTrigger === "click" ? "click" : "view";
             if (on === "click") {

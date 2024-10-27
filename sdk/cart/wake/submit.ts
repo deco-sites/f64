@@ -1,5 +1,5 @@
-import { type AppContext } from "apps/wake/mod.ts";
-import { type CartSubmitActions } from "../../../actions/minicart/submit.ts";
+import type { AppContext } from "apps/wake/mod.ts";
+import type { CartSubmitActions } from "../../../actions/minicart/submit.ts";
 import { type Cart, cartFrom } from "./loader.ts";
 
 const actions: CartSubmitActions<AppContext> = {
@@ -42,10 +42,8 @@ const actions: CartSubmitActions<AppContext> = {
     return cartFrom(response);
   },
   setCoupon: async ({ coupon }, _req, ctx) => {
-    const response = await ctx.invoke(
-      "wake/actions/cart/addCoupon.ts",
-      { coupon: coupon ?? undefined },
-    )
+    const response = await ctx
+      .invoke("wake/actions/cart/addCoupon.ts", { coupon: coupon ?? undefined })
       // When adding an invalid coupon, wake throws.
       // We should instead return the cart as is
       .catch(() => ctx.invoke("wake/loaders/cart.ts"));

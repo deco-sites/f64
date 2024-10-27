@@ -1,9 +1,9 @@
-import { AnalyticsItem } from "apps/commerce/types.ts";
+import { useScript } from "@deco/deco/hooks";
+import type { AnalyticsItem } from "apps/commerce/types.ts";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import Icon from "../ui/Icon.tsx";
-import { useScript } from "@deco/deco/hooks";
 interface Props {
   variant?: "full" | "icon";
   item: AnalyticsItem;
@@ -30,7 +30,7 @@ const onClick = (productID: string, productGroupID: string) => {
     button.classList.add("htmx-request");
     window.STOREFRONT.WISHLIST.toggle(productID, productGroupID);
   } else {
-    window.alert(`Please login to add the product to your wishlist`);
+    window.alert("Please login to add the product to your wishlist");
   }
 };
 function WishlistButton({ item, variant = "full" }: Props) {

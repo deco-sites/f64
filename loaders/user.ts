@@ -1,8 +1,8 @@
-import { Person } from "apps/commerce/types.ts";
-import { AppContext } from "../apps/site.ts";
+import type { Person } from "apps/commerce/types.ts";
+import type { AppContext } from "../apps/site.ts";
 import { usePlatform } from "../sdk/usePlatform.tsx";
 
-import { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
+import type { AppContext as AppContextVTEX } from "apps/vtex/mod.ts";
 
 async function loader(
   _: unknown,

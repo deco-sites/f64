@@ -1,13 +1,13 @@
-import { AppContext } from "../apps/site.ts";
-import { Minicart } from "../components/minicart/Minicart.tsx";
+import type { AppContext } from "../apps/site.ts";
+import type { Minicart } from "../components/minicart/Minicart.tsx";
 import { usePlatform } from "../sdk/usePlatform.tsx";
 
-import vtex from "../sdk/cart/vtex/loader.ts";
-import vnda from "../sdk/cart/vnda/loader.ts";
-import wake from "../sdk/cart/wake/loader.ts";
 import linx from "../sdk/cart/linx/loader.ts";
-import shopify from "../sdk/cart/shopify/loader.ts";
 import nuvemshop from "../sdk/cart/nuvemshop/loader.ts";
+import shopify from "../sdk/cart/shopify/loader.ts";
+import vnda from "../sdk/cart/vnda/loader.ts";
+import vtex from "../sdk/cart/vtex/loader.ts";
+import wake from "../sdk/cart/wake/loader.ts";
 
 // deno-lint-ignore no-explicit-any
 const loaders: Record<string, any> = {

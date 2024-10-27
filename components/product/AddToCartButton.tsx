@@ -1,10 +1,10 @@
-import { AnalyticsItem, Product } from "apps/commerce/types.ts";
-import { JSX } from "preact";
+import { useScript } from "@deco/deco/hooks";
+import type { AnalyticsItem, Product } from "apps/commerce/types.ts";
+import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import QuantitySelector from "../ui/QuantitySelector.tsx";
-import { useScript } from "@deco/deco/hooks";
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
   seller: string;
@@ -13,17 +13,17 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
 const onClick = () => {
   event?.stopPropagation();
   const button = event?.currentTarget as HTMLButtonElement | null;
-  const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
+  const container = button?.closest<HTMLDivElement>("div[data-cart-item]")!;
   const { item, platformProps } = JSON.parse(
     decodeURIComponent(container.getAttribute("data-cart-item")!),
   );
   window.STOREFRONT.CART.addToCart(item, platformProps);
 };
 const onChange = () => {
-  const input = event!.currentTarget as HTMLInputElement;
-  const productID = input!
-    .closest("div[data-cart-item]")!
-    .getAttribute("data-item-id")!;
+  const input = event?.currentTarget as HTMLInputElement;
+  const productID = input?.closest("div[data-cart-item]")?.getAttribute(
+    "data-item-id",
+  )!;
   const quantity = Number(input.value);
   if (!input.validity.valid) {
     return;
@@ -48,11 +48,11 @@ const onLoad = (id: string) => {
     input.value = quantity.toString();
     checkbox.checked = quantity > 0;
     // enable interactivity
-    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) =>
-      node.disabled = false
+    container?.querySelectorAll<HTMLButtonElement>("button").forEach(
+      (node) => (node.disabled = false),
     );
-    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) =>
-      node.disabled = false
+    container?.querySelectorAll<HTMLButtonElement>("input").forEach(
+      (node) => (node.disabled = false),
     );
   });
 };

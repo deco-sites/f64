@@ -6,10 +6,7 @@ const formatter = (currency: string, locale: string) => {
   if (!formatters.has(key)) {
     formatters.set(
       key,
-      new Intl.NumberFormat(locale, {
-        style: "currency",
-        currency,
-      }),
+      new Intl.NumberFormat(locale, { minimumFractionDigits: 2 }),
     );
   }
 
@@ -18,6 +15,6 @@ const formatter = (currency: string, locale: string) => {
 
 export const formatPrice = (
   price: number | undefined,
-  currency = "BRL",
-  locale = "pt-BR",
+  currency = "RON",
+  locale = "ro-RO",
 ) => price ? formatter(currency, locale).format(price) : null;

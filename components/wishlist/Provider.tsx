@@ -1,7 +1,7 @@
-import { AppContext } from "../../apps/site.ts";
+import { useScript } from "@deco/deco/hooks";
+import type { AppContext } from "../../apps/site.ts";
 import { WISHLIST_FORM_ID } from "../../constants.ts";
 import { useComponent } from "../../sections/Component.tsx";
-import { useScript } from "@deco/deco/hooks";
 export interface Wishlist {
   productIDs: string[];
 }
@@ -19,7 +19,9 @@ const onLoad = (formID: string) => {
   const form = document.getElementById(formID) as HTMLFormElement;
   window.STOREFRONT.WISHLIST.dispatch(form);
 };
-function WishlistProvider({ wishlist }: {
+function WishlistProvider({
+  wishlist,
+}: {
   wishlist: Wishlist | null;
 }) {
   return (

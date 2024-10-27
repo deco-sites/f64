@@ -1,5 +1,5 @@
-import { MINICART_FORM_ID } from "../../constants.ts";
 import { useScript } from "@deco/deco/hooks";
+import { MINICART_FORM_ID } from "../../constants.ts";
 export interface Props {
   coupon?: string;
 }

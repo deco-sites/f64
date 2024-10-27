@@ -1,9 +1,8 @@
-import { Product } from "apps/commerce/types.ts";
-import { clx } from "../../sdk/clx.ts";
+import type { Product } from "apps/commerce/types.ts";
+import { useId } from "../../sdk/useId.ts";
 import Icon from "../ui/Icon.tsx";
 import Slider from "../ui/Slider.tsx";
 import ProductCard from "./ProductCard.tsx";
-import { useId } from "../../sdk/useId.ts";
 
 interface Props {
   products: Product[];
@@ -15,48 +14,37 @@ function ProductSlider({ products, itemListName }: Props) {
 
   return (
     <>
-      <div
-        id={id}
-        class="grid grid-rows-1"
-        style={{
-          gridTemplateColumns: "min-content 1fr min-content",
-        }}
-      >
-        <div class="col-start-1 col-span-3 row-start-1 row-span-1">
-          <Slider class="carousel carousel-center sm:carousel-end gap-5 sm:gap-10 w-full">
-            {products?.map((product, index) => (
-              <Slider.Item
+      <div id={id} class="relative">
+        <Slider class="carousel carousel-center gap-5 w-full">
+          {products?.map((product, index) => (
+            <Slider.Item
+              index={index}
+              class="carousel-item py-2 w-[calc(50%-20px+(20px/2))] lg:w-[calc(20%-20px+(20px/5))]"
+            >
+              <ProductCard
                 index={index}
-                class={clx(
-                  "carousel-item",
-                  "first:pl-5 first:sm:pl-0",
-                  "last:pr-5 last:sm:pr-0",
-                )}
-              >
-                <ProductCard
-                  index={index}
-                  product={product}
-                  itemListName={itemListName}
-                  class="w-[287px] sm:w-[300px]"
-                />
-              </Slider.Item>
-            ))}
-          </Slider>
-        </div>
+                product={product}
+                itemListName={itemListName}
+              />
+            </Slider.Item>
+          ))}
+        </Slider>
 
-        <div class="col-start-1 col-span-1 row-start-1 row-span-1 z-10 self-center p-2 relative bottom-[15%]">
-          <Slider.PrevButton class="hidden sm:flex disabled:invisible btn btn-outline btn-sm btn-circle no-animation">
-            <Icon id="chevron-right" class="rotate-180" />
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 flex justify-between w-full pointer-events-none">
+          <Slider.PrevButton class="size-10 lg:size-[50px] rounded-full bg-[#f6c38b] hover:bg-[#f68e1e] -translate-x-1/2 flex justify-center items-center pointer-events-auto">
+            <Icon
+              id="chevron-right"
+              size={24}
+              class="rotate-180 text-white shrink-0"
+            />
           </Slider.PrevButton>
-        </div>
-
-        <div class="col-start-3 col-span-1 row-start-1 row-span-1 z-10 self-center p-2 relative bottom-[15%]">
-          <Slider.NextButton class="hidden sm:flex disabled:invisible btn btn-outline btn-sm btn-circle no-animation">
-            <Icon id="chevron-right" />
+          <Slider.NextButton class="size-10 lg:size-[50px] rounded-full bg-[#f6c38b] hover:bg-[#f68e1e] translate-x-1/2 flex justify-center items-center pointer-events-auto">
+            <Icon id="chevron-right" size={24} class="text-white shrink-0" />
           </Slider.NextButton>
         </div>
       </div>
-      <Slider.JS rootId={id} />
+
+      <Slider.JS rootId={id} infinite />
     </>
   );
 }

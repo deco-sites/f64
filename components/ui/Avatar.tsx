@@ -12,14 +12,14 @@ interface Props {
 const colors: Record<string, Record<string, string>> = {
   "azul-clara": { backgroundColor: "#87CEFA" },
   "azul-marinho": { backgroundColor: "#000080" },
-  "branca": { backgroundColor: "#FFFFFF" },
-  "cinza": { backgroundColor: "#808080" },
+  branca: { backgroundColor: "#FFFFFF" },
+  cinza: { backgroundColor: "#808080" },
   "cinza-escura": { backgroundColor: "#A9A9A9" },
-  "laranja": { backgroundColor: "#FFA500" },
-  "marrom": { backgroundColor: "#A52A2A" },
-  "preta": { backgroundColor: "#161616" },
+  laranja: { backgroundColor: "#FFA500" },
+  marrom: { backgroundColor: "#A52A2A" },
+  preta: { backgroundColor: "#161616" },
   "verde-clara": { backgroundColor: "#90EE90" },
-  "vermelha": { backgroundColor: "#FF0000" },
+  vermelha: { backgroundColor: "#FF0000" },
 };
 
 const variants = {

@@ -1,9 +1,9 @@
+import type { SectionProps } from "@deco/deco";
+import { useSection } from "@deco/deco/hooks";
 // deno-lint-ignore-file no-explicit-any
 import { Component, type ComponentType } from "preact";
 import { toFileUrl } from "std/path/mod.ts";
 import type { AppContext } from "../apps/site.ts";
-import { useSection } from "@deco/deco/hooks";
-import { type SectionProps } from "@deco/deco";
 interface Props {
   component: string;
   props?: Record<string, unknown>;
@@ -13,15 +13,18 @@ export type ComponentProps<LoaderFunc, ActionFunc = LoaderFunc> = SectionProps<
   ActionFunc
 >;
 const ROOT = toFileUrl(Deno.cwd()).href;
-export class ErrorBoundary extends Component<{
-  fallback?: ComponentType<{
-    error: Error;
-  }>;
-}, {
-  error: Error | null;
-}> {
-  state = { error: null };
-  static getDerivedStateFromError(error: Error) {
+export class ErrorBoundary extends Component<
+  {
+    fallback?: ComponentType<{
+      error: Error;
+    }>;
+  },
+  {
+    error: Error | null;
+  }
+> {
+  override state = { error: null };
+  static override getDerivedStateFromError(error: Error) {
     return { error };
   }
   render() {
@@ -96,7 +99,10 @@ export const action = async (
     };
   }
 };
-export default function Section({ Component }: {
+export default function Section({
+  Component,
+}: {
+  // deno-lint-ignore no-explicit-any
   Component: any;
 }) {
   return <Component />;

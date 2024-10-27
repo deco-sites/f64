@@ -1,6 +1,6 @@
-import { ComponentChildren } from "preact";
-import { useId } from "../../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
+import type { ComponentChildren } from "preact";
+import { useId } from "../../sdk/useId.ts";
 interface Props {
   open?: boolean;
   children?: ComponentChildren;
@@ -25,7 +25,9 @@ function Modal({ children, open, id = useId() }: Props) {
       <input id={id} checked={open} type="checkbox" class="modal-toggle" />
       <div class="modal">
         {children}
-        <label class="modal-backdrop" for={id}>Close</label>
+        <label class="modal-backdrop" for={id}>
+          Close
+        </label>
       </div>
       <script
         type="module"

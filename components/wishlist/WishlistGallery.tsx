@@ -1,7 +1,7 @@
+import type { SectionProps } from "@deco/deco";
 import SearchResult, {
-  Props as SearchResultProps,
+  type Props as SearchResultProps,
 } from "../search/SearchResult.tsx";
-import { type SectionProps } from "@deco/deco";
 export type Props = SearchResultProps;
 function WishlistGallery(props: SectionProps<typeof loader>) {
   const isEmpty = !props.page || props.page.products.length === 0;

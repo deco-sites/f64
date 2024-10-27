@@ -1,15 +1,16 @@
-import { type JSX } from "preact";
+import { useScript } from "@deco/deco/hooks";
+import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
-import { useScript } from "@deco/deco/hooks";
 const onClick = (delta: number) => {
   // doidera!
-  event!.stopPropagation();
-  const button = event!.currentTarget as HTMLButtonElement;
-  const input = button.parentElement
-    ?.querySelector<HTMLInputElement>('input[type="number"]')!;
-  const min = Number(input.min) || -Infinity;
-  const max = Number(input.max) || Infinity;
+  event?.stopPropagation();
+  const button = event?.currentTarget as HTMLButtonElement;
+  const input = button.parentElement?.querySelector<HTMLInputElement>(
+    'input[type="number"]',
+  )!;
+  const min = Number(input.min) || Number.NEGATIVE_INFINITY;
+  const max = Number(input.max) || Number.POSITIVE_INFINITY;
   input.value = `${Math.min(Math.max(input.valueAsNumber + delta, min), max)}`;
   input.dispatchEvent(new Event("change", { bubbles: true }));
 };

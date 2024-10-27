@@ -1,50 +1,29 @@
-import { JSX } from "preact";
+import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 
 export interface Props {
   /** @description Section title */
   title?: string;
-
-  /** @description See all link */
-  cta?: string;
 }
 
-function Header({ title, cta }: Props) {
+function Header({ title }: Props) {
   if (!title) {
     return null;
   }
 
-  return (
-    <div
-      class={clx(
-        "flex justify-between items-center gap-2",
-        "px-5 sm:px-0",
-      )}
-    >
-      <span class="text-2xl sm:text-3xl font-semibold">{title}</span>
-      {cta && (
-        <a class="text-sm font-medium text-primary" href={cta}>
-          See all
-        </a>
-      )}
-    </div>
-  );
+  return <h2 class="text-[#333] text-2xl font-bold">{title}</h2>;
 }
 
 interface Tab {
   title: string;
 }
 
-function Tabbed(
-  { children }: {
-    children: JSX.Element;
-  },
-) {
-  return (
-    <>
-      {children}
-    </>
-  );
+function Tabbed({
+  children,
+}: {
+  children: JSX.Element;
+}) {
+  return <>{children}</>;
 }
 
 function Container({ class: _class, ...props }: JSX.IntrinsicElements["div"]) {

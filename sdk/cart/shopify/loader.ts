@@ -1,7 +1,7 @@
 import { itemToAnalyticsItem } from "apps/shopify/hooks/useCart.ts";
 import type a from "apps/shopify/loaders/cart.ts";
-import { AppContext } from "apps/shopify/mod.ts";
-import { Minicart } from "../../../components/minicart/Minicart.tsx";
+import type { AppContext } from "apps/shopify/mod.ts";
+import type { Minicart } from "../../../components/minicart/Minicart.tsx";
 
 export type Cart = Awaited<ReturnType<typeof a>>;
 
@@ -10,9 +10,7 @@ const locale = "pt-BR";
 export const cartFrom = (cart: Cart): Minicart => {
   const items = cart?.lines?.nodes ?? [];
   const coupons = cart?.discountCodes;
-  const coupon = coupons && coupons[0]?.applicable
-    ? coupons[0].code
-    : undefined;
+  const coupon = coupons?.[0]?.applicable ? coupons[0].code : undefined;
   const currency = cart?.cost?.totalAmount.currencyCode ?? "BRL";
   const total = cart?.cost?.totalAmount.amount ?? 0;
   const subTotal = cart?.cost?.subtotalAmount.amount ?? 0;

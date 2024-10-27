@@ -1,7 +1,7 @@
+import { useScript } from "@deco/deco/hooks";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import Icon from "../ui/Icon.tsx";
-import { useScript } from "@deco/deco/hooks";
 const onLoad = (containerID: string) => {
   window.STOREFRONT.USER.subscribe((sdk) => {
     const container = document.getElementById(containerID) as HTMLDivElement;
@@ -18,7 +18,9 @@ const onLoad = (containerID: string) => {
     }
   });
 };
-function SignIn({ variant }: {
+function SignIn({
+  variant,
+}: {
   variant: "mobile" | "desktop";
 }) {
   const id = useId();
