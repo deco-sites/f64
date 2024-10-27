@@ -20,10 +20,10 @@ interface Props {
 
 export default function Blog({ title, items, blogPage }: Props) {
   return (
-    <div class="mb-11 container flex flex-col items-start gap-8">
+    <div class="mb-16 container flex flex-col items-start gap-8">
       <Section.Header title={title} />
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-3 mb-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-3 mb-2">
         {items.map(({ image, title, description, link }) => (
           <a
             href={link}

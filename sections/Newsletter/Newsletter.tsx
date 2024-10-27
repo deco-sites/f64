@@ -10,13 +10,13 @@ export interface Props {
 export default function Newsletter({ label, placeholder }: Props) {
   return (
     <div class="bg-[#f47300]">
-      <div class="container flex flex-col lg:flex-row lg:items-center gap-y-6 justify-between !px-4 max-lg:py-6 lg:h-24 relative">
+      <div class="container flex flex-col lg:flex-row lg:items-center gap-y-6 justify-between max-xl:!px-4 max-lg:py-6 lg:h-24 relative">
         <div
           dangerouslySetInnerHTML={{ __html: label }}
-          class="text-sm text-white [&_strong]:text-xl lg:mb-0"
+          class="text-sm text-white [&_strong]:text-xl lg:mb-0 mr-auto"
         />
 
-        <form class="flex flex-col items-start lg:flex-row gap-x-4 gap-y-2.5 w-full max-w-[470px]">
+        <form class="flex flex-col items-start lg:flex-row gap-x-4 gap-y-2.5 w-full max-w-[500px] mr-auto">
           <input
             name="email"
             type="email"
@@ -36,7 +36,7 @@ export default function Newsletter({ label, placeholder }: Props) {
           id="flower"
           width={82}
           height={86}
-          class="self-end max-lg:absolute bottom-0 right-10"
+          class="absolute bottom-0 right-10 xl:right-0"
         />
       </div>
     </div>

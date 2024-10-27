@@ -1,131 +1,251 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
-import Section from "../../components/ui/Section.tsx";
+import { useDevice } from "@deco/deco/hooks";
+import { useId } from "../../sdk/useId.ts";
+import Icon from "../../components/ui/Icon.tsx";
 
-/** @titleBy title */
-interface Item {
+/**
+ * @titleBy text
+ */
+interface Left {
+  icon: ImageWidget;
+  text: RichText;
+}
+
+/**
+ * @titleBy name
+ */
+interface FooterNavItem {
+  name: string;
+  link: string;
+}
+
+/**
+ * @titleBy title
+ */
+interface FooterNav {
   title: string;
-  href: string;
+  items: FooterNavItem[];
 }
 
-/** @titleBy title */
-interface Link extends Item {
-  children: Item[];
-}
-
-/** @titleBy alt */
+/**
+ * @titleBy link
+ */
 interface Social {
-  alt?: string;
-  href?: string;
+  icon: ImageWidget;
+  link: string;
+}
+
+/**
+ * @titleBy link
+ */
+interface ImageLink {
   image: ImageWidget;
+  link: string;
+}
+
+interface Bottom {
+  payments: ImageWidget[];
+  others: ImageLink[];
+  security: ImageLink[];
+}
+
+interface Right {
+  socials: Social[];
+  images: ImageLink[];
 }
 
 interface Props {
-  links?: Link[];
-  social?: Social[];
-  paymentMethods?: Social[];
-  policies?: Item[];
-  logo?: ImageWidget;
-  trademark?: string;
+  footerNav: FooterNav[];
+  left: Left[];
+  right: Right;
+  bottom: Bottom;
 }
 
-function Footer(
-  {
-    links = [],
-    social = [],
-    policies = [],
-    paymentMethods = [],
-    logo,
-    trademark,
-  }: Props,
-) {
-  return (
-    <footer
-      class="px-5 sm:px-0 mt-5 sm:mt-10"
-      style={{ backgroundColor: "#EFF0F0" }}
-    >
-      <div class="container flex flex-col gap-5 sm:gap-10 py-10">
-        <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
-          {links.map(({ title, href, children }) => (
-            <li class="flex flex-col gap-4">
-              <a class="text-base font-semibold" href={href}>
-                {title}
-              </a>
-              <ul class="flex flex-col gap-2">
-                {children.map(({ title, href }) => (
-                  <li>
-                    <a class="text-sm font-medium text-base-400" href={href}>
-                      {title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+export default function Footer({ footerNav, left, right, bottom }: Props) {
+  const isDesktop = useDevice() === "desktop";
 
-        <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
-          <ul class="flex gap-4">
-            {social.map(({ image, href, alt }) => (
-              <li>
-                <a href={href}>
+  if (isDesktop) {
+    return (
+      <>
+        <div class="bg-[#444] pt-12 pb-10 px-4">
+          <div class="container flex justify-between">
+            <div class="flex flex-col gap-5">
+              {left.map(({ icon, text }) => (
+                <div class="flex items-center gap-3">
                   <Image
-                    src={image}
-                    alt={alt}
-                    loading="lazy"
-                    width={24}
-                    height={24}
+                    src={icon}
+                    alt=""
+                    width={32}
+                    height={48}
+                    class="w-8 h-12"
                   />
-                </a>
-              </li>
-            ))}
-          </ul>
-          <ul class="flex flex-wrap gap-2">
-            {paymentMethods.map(({ image, alt }) => (
-              <li class="h-8 w-10 border border-base-100 rounded flex justify-center items-center">
-                <Image
-                  src={image}
-                  alt={alt}
-                  width={20}
-                  height={20}
-                  loading="lazy"
-                />
-              </li>
-            ))}
-          </ul>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: text }}
+                    class="text-sm [&_strong]:font-bold text-white space-y-0.5"
+                  />
+                </div>
+              ))}
+            </div>
+
+            <div class="w-1/2 flex justify-between">
+              {footerNav.map(({ title, items }) => (
+                <ul class="flex flex-col gap-1">
+                  <li class="text-sm font-bold text-white">{title}</li>
+
+                  {items.map(({ name, link }) => (
+                    <a href={link} class="text-sm text-[#d0d2de]">
+                      {name}
+                    </a>
+                  ))}
+                </ul>
+              ))}
+            </div>
+
+            <div class="flex flex-col items-end gap-6">
+              <div class="flex gap-4">
+                {right.socials.map(({ icon, link }) => (
+                  <a href={link}>
+                    <Image src={icon} alt="" width={25} height={25} />
+                  </a>
+                ))}
+              </div>
+
+              <div class="flex flex-col gap-3">
+                {right.images.map(({ image, link }) => (
+                  <a href={link}>
+                    <Image src={image} alt="" width={200} height={500} />
+                  </a>
+                ))}
+              </div>
+
+              <span class="text-white opacity-50 text-xs">
+                Copyright F64.ro © 2001-{new Date().getFullYear()}
+              </span>
+            </div>
+          </div>
         </div>
 
-        <hr class="w-full text-base-400" />
-
-        <div class="grid grid-flow-row sm:grid-flow-col gap-8">
-          <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
-            {policies.map(({ title, href }) => (
-              <li>
-                <a class="text-xs font-medium" href={href}>
-                  {title}
-                </a>
-              </li>
+        <div class="container !p-4 flex justify-between">
+          <div class="flex items-center gap-3">
+            {bottom.payments.map((image) => (
+              <img src={image} alt="" loading="lazy" class="object-contain" />
             ))}
-          </ul>
-
-          <div class="flex flex-nowrap items-center justify-between sm:justify-center gap-4">
-            <div>
-              <img loading="lazy" src={logo} />
-            </div>
-            <span class="text-xs font-normal text-base-400">{trademark}</span>
           </div>
 
-          <div class="flex flex-nowrap items-center justify-center gap-4">
-            <span class="text-sm font-normal text-base-400">Powered by</span>
-            <PoweredByDeco />
+          <div class="flex items-center gap-3">
+            {bottom.others.map(({ image, link }) => (
+              <a href={link}>
+                <img src={image} alt="" loading="lazy" class="object-contain" />
+              </a>
+            ))}
           </div>
+
+          <div class="flex items-center gap-4">
+            <span class="text-[13px] text-[#33343b] opacity-50">
+              Securitate
+            </span>
+
+            {bottom.security.map(({ image, link }) => (
+              <a href={link}>
+                <img src={image} alt="" loading="lazy" class="object-contain" />
+              </a>
+            ))}
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  return (
+    <>
+      <div class="bg-[#444] px-4 py-7 flex flex-col gap-5">
+        <div class="flex items-start justify-between gap-2">
+          <div class="flex flex-col gap-5">
+            {left.map(({ icon, text }) => (
+              <div class="flex items-center gap-3">
+                <Image
+                  src={icon}
+                  alt=""
+                  width={32}
+                  height={48}
+                  class="w-8 h-12"
+                />
+                <div
+                  dangerouslySetInnerHTML={{ __html: text }}
+                  class="text-sm [&_strong]:font-bold text-white space-y-0.5"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div class="flex gap-x-5 gap-y-3 flex-wrap justify-end flex-1">
+            {right.images.map(({ image, link }) => (
+              <a href={link}>
+                <Image src={image} alt="" width={200} height={500} />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div class="w-full h-px bg-[#696969]" />
+
+        <div class="flex flex-col gap-2">
+          {footerNav.map(({ title, items }) => {
+            const id = useId();
+
+            return (
+              <div>
+                <input type="checkbox" id={id} class="hidden peer" />
+
+                <label
+                  for={id}
+                  class="font-bold text-lg text-[#d0d2de] group flex items-center justify-between"
+                >
+                  {title}
+                  <Icon
+                    id="chevron-right"
+                    class="rotate-90 peer-checked:group-[]:-rotate-90 transition-all"
+                  />
+                </label>
+
+                <div class="group grid transition-all grid-rows-[0fr] peer-checked:grid-rows-[1fr]">
+                  <ul class="flex flex-col gap-1 overflow-hidden">
+                    {items.map(({ name, link }) => (
+                      <a
+                        href={link}
+                        class="text-sm text-[#d0d2de] pl-3 first:pt-1"
+                      >
+                        {name}
+                      </a>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div class="flex gap-4 mx-auto">
+          {right.socials.map(({ icon, link }) => (
+            <a href={link}>
+              <Image src={icon} alt="" width={25} height={25} />
+            </a>
+          ))}
+        </div>
+
+        <span class="text-white opacity-50 text-xs mx-auto">
+          Copyright F64.ro © 2001-{new Date().getFullYear()}
+        </span>
+      </div>
+
+      <div class="pt-4 pb-6 flex justify-center">
+        <div class="flex items-center gap-3">
+          {bottom.payments.map((image) => (
+            <img src={image} alt="" loading="lazy" class="object-contain" />
+          ))}
         </div>
       </div>
-    </footer>
+    </>
   );
 }
-
-export const LoadingFallback = () => <Section.Placeholder height="1145px" />;
-
-export default Footer;

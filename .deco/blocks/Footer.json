@@ -1,167 +1,347 @@
 {
-    "__resolveType": "site/sections/Footer/Footer.tsx",
-    "links": [
+  "__resolveType": "site/sections/Footer/Footer.tsx",
+  "links": [
+    {
+      "title": "Our Company",
+      "children": [
         {
-            "title": "Our Company",
-            "children": [
-                {
-                    "title": "About us",
-                    "href": "#"
-                },
-                {
-                    "title": "Our blog",
-                    "href": "#"
-                },
-                {
-                    "title": "Stores",
-                    "href": "#"
-                },
-                {
-                    "title": "Work with us",
-                    "href": "#"
-                }
-            ],
-            "href": "#"
+          "title": "About us",
+          "href": "#"
         },
         {
-            "title": "Orders & Purchases",
-            "href": "#",
-            "children": [
-                {
-                    "title": "Check order status",
-                    "href": "#"
-                },
-                {
-                    "title": "Return and exchanges",
-                    "href": "#"
-                },
-                {
-                    "title": "Product retail",
-                    "href": "#"
-                },
-                {
-                    "title": "Gift cards",
-                    "href": "#"
-                }
-            ]
+          "title": "Our blog",
+          "href": "#"
         },
         {
-            "title": "Support & Services",
-            "href": "#",
-            "children": [
-                {
-                    "title": "Support Center",
-                    "href": "#"
-                },
-                {
-                    "title": "Schedule a service",
-                    "href": "#"
-                },
-                {
-                    "title": "Contact us",
-                    "href": "#"
-                }
-            ]
+          "title": "Stores",
+          "href": "#"
         },
         {
-            "title": "Support & Services",
-            "children": [
-                {
-                    "title": "Support Center",
-                    "href": "#"
-                },
-                {
-                    "title": "Schedule a service",
-                    "href": "#"
-                },
-                {
-                    "title": "Contact us",
-                    "href": "#"
-                }
-            ],
-            "href": "#"
+          "title": "Work with us",
+          "href": "#"
         }
-    ],
-    "social": [
+      ],
+      "href": "#"
+    },
+    {
+      "title": "Orders & Purchases",
+      "href": "#",
+      "children": [
         {
-            "alt": "facebook",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/66137259-6bdb-4322-bed1-a2593560934c"
+          "title": "Check order status",
+          "href": "#"
         },
         {
-            "alt": "Instagram",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e71ae7f3-0f51-4185-af0a-fca08ebe4451"
+          "title": "Return and exchanges",
+          "href": "#"
         },
         {
-            "alt": "Pinterest",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4becba39-fc08-4df2-bb5d-5e843f375deb"
+          "title": "Product retail",
+          "href": "#"
         },
         {
-            "alt": "X",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/179a9ee9-3813-47b8-96eb-11e0c5558ede"
+          "title": "Gift cards",
+          "href": "#"
         }
-    ],
-    "paymentMethods": [
+      ]
+    },
+    {
+      "title": "Support & Services",
+      "href": "#",
+      "children": [
         {
-            "alt": "Paypal",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/7d858621-469e-4528-91b5-8c79fc413162"
+          "title": "Support Center",
+          "href": "#"
         },
         {
-            "alt": "Mastercard",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88ab870c-4256-44b4-8da3-3cefe0436e87"
+          "title": "Schedule a service",
+          "href": "#"
         },
         {
-            "alt": "Maestro",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e94aaf80-25f5-4e23-8708-14d78ffdebbb"
-        },
-        {
-            "alt": "Google Pay",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/ccddc66e-baa8-4b44-a52c-ea48d8e111b5"
-        },
-        {
-            "alt": "Elo",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/11f90dd4-91b5-4b60-9304-f8a7a9be84eb"
-        },
-        {
-            "alt": "Diners",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/20bb8e66-5495-4f92-a6d0-4967a66f3a44"
-        },
-        {
-            "alt": "Apple Pay",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d4227ed7-333d-49b8-b3e2-35719f606640"
-        },
-        {
-            "alt": "Amex",
-            "href": "#",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/023472cf-782d-4a22-82d9-ecdf18466d96"
-        },
-        {
-            "alt": "Visa",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/2d213fd6-2754-4e92-a6f1-03825f71c7af"
+          "title": "Contact us",
+          "href": "#"
         }
-    ],
-    "policies": [
+      ]
+    },
+    {
+      "title": "Support & Services",
+      "children": [
         {
-            "title": "Privacy Policy",
-            "href": "#"
+          "title": "Support Center",
+          "href": "#"
         },
         {
-            "title": "Terms and Conditions",
-            "href": "#"
+          "title": "Schedule a service",
+          "href": "#"
         },
         {
-            "title": "Cookies Policy",
-            "href": "#"
+          "title": "Contact us",
+          "href": "#"
         }
+      ],
+      "href": "#"
+    }
+  ],
+  "social": [
+    {
+      "alt": "facebook",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/66137259-6bdb-4322-bed1-a2593560934c"
+    },
+    {
+      "alt": "Instagram",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e71ae7f3-0f51-4185-af0a-fca08ebe4451"
+    },
+    {
+      "alt": "Pinterest",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4becba39-fc08-4df2-bb5d-5e843f375deb"
+    },
+    {
+      "alt": "X",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/179a9ee9-3813-47b8-96eb-11e0c5558ede"
+    }
+  ],
+  "paymentMethods": [
+    {
+      "alt": "Paypal",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/7d858621-469e-4528-91b5-8c79fc413162"
+    },
+    {
+      "alt": "Mastercard",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88ab870c-4256-44b4-8da3-3cefe0436e87"
+    },
+    {
+      "alt": "Maestro",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e94aaf80-25f5-4e23-8708-14d78ffdebbb"
+    },
+    {
+      "alt": "Google Pay",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/ccddc66e-baa8-4b44-a52c-ea48d8e111b5"
+    },
+    {
+      "alt": "Elo",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/11f90dd4-91b5-4b60-9304-f8a7a9be84eb"
+    },
+    {
+      "alt": "Diners",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/20bb8e66-5495-4f92-a6d0-4967a66f3a44"
+    },
+    {
+      "alt": "Apple Pay",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d4227ed7-333d-49b8-b3e2-35719f606640"
+    },
+    {
+      "alt": "Amex",
+      "href": "#",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/023472cf-782d-4a22-82d9-ecdf18466d96"
+    },
+    {
+      "alt": "Visa",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/2d213fd6-2754-4e92-a6f1-03825f71c7af"
+    }
+  ],
+  "policies": [
+    {
+      "title": "Privacy Policy",
+      "href": "#"
+    },
+    {
+      "title": "Terms and Conditions",
+      "href": "#"
+    },
+    {
+      "title": "Cookies Policy",
+      "href": "#"
+    }
+  ],
+  "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f1faab73-e4ff-4037-b7c4-5d02bd0b1209",
+  "trademark": "TM & © 2023 Deco Storefront, Inc.",
+  "bottom": {
+    "payments": [
+      "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/de374f8e-ef78-45af-99cf-5aee48a7dbe5/--img-footer-payments___07041b5994f02a0c166c1558fab195ad.webp",
+      "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/18378577-3154-4498-9318-c59b3c938ece/--oney___5ab4f3482d7046fd088f8d35c8907210.webp"
     ],
-    "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f1faab73-e4ff-4037-b7c4-5d02bd0b1209",
-    "trademark": "TM & © 2023 Deco Storefront, Inc."
+    "others": [
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/dba79dda-521e-4753-9ff5-a8770efffb53/--logo_partener_1059.png",
+        "link": "https://www.price.ro/"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/a1789fb1-91fc-463a-a967-1fd184323e81/16.png",
+        "link": "http://www.shopmania.ro/"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/a882aa26-817c-4644-a87a-580990f74eb9/--recruitment_badge.png",
+        "link": "https://api.2performant.com/public/affiliates/recruit_affiliate?unique_code=5baacfa1f"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d96a57c8-eb51-4d5f-97b9-816aa1523783/--marca-9aee3112-3.png",
+        "link": "https://www.trusted.ro/assets/verify.php?id=d827f12e35eae370ba9c65b7f6026695"
+      }
+    ],
+    "security": [
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/7600f239-683d-4554-8d22-ccf12d5cb746/encrypt___d296cdd0985eda7c3d5aa4374e81fafb.webp",
+        "link": "https://letsencrypt.org/"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/a5c7f44d-ad4e-4927-ac73-90c4c23ec10b/vtex___b2bb413fd9951fffa27117e3160397e7.webp",
+        "link": "https://vtex.com/pci"
+      }
+    ]
+  },
+  "footerNav": [
+    {
+      "items": [
+        {
+          "name": "Contul meu",
+          "link": "/info/contul-meu"
+        },
+        {
+          "name": "Cum comand",
+          "link": "/info/cum-comand"
+        },
+        {
+          "link": "/info/livrare-curier",
+          "name": "Cum se livreaza"
+        },
+        {
+          "link": "/info/cum-platesc",
+          "name": "Cum platesc"
+        },
+        {
+          "link": "/info/vanzari-corporate-b2b",
+          "name": "Vanzari Corporate"
+        }
+      ],
+      "title": "Comenzi si livrare"
+    },
+    {
+      "items": [
+        {
+          "name": "Contact",
+          "link": "/contact"
+        },
+        {
+          "link": "/feedback-ul-tau-conteaza",
+          "name": "Sugestii si reclamatii"
+        },
+        {
+          "name": "Suport clienti",
+          "link": "/info"
+        },
+        {
+          "name": "Garantie",
+          "link": "/info/service-si-garantii"
+        },
+        {
+          "name": "Cariere F64",
+          "link": "/jobs"
+        }
+      ],
+      "title": "Suport"
+    },
+    {
+      "items": [
+        {
+          "name": "Service si garantii",
+          "link": "/info/service-si-garantii"
+        },
+        {
+          "name": "Returnare",
+          "link": "/info/conditii-retur"
+        },
+        {
+          "link": "https://anpc.ro/",
+          "name": "ANPC"
+        },
+        {
+          "name": "ANPC-SAL",
+          "link": "https://anpc.ro/ce-este-sal/"
+        },
+        {
+          "name": "ODR",
+          "link": "https://ec.europa.eu/consumers/odr/main/?event=main.home2.show"
+        }
+      ],
+      "title": "Service si Garantii"
+    },
+    {
+      "items": [
+        {
+          "name": "Blog F64",
+          "link": "https://blog.f64.ro/"
+        },
+        {
+          "name": "Concurs F64",
+          "link": "https://concurs.f64.ro/"
+        },
+        {
+          "name": "Termeni si conditii",
+          "link": "/info/termeni-si-conditii"
+        },
+        {
+          "name": "Prelucrarea datelor",
+          "link": "/info/prelucrarea-datelor"
+        },
+        {
+          "link": "/info/cookies",
+          "name": "Cookies"
+        }
+      ],
+      "title": "F64 Studio"
+    }
+  ],
+  "left": [
+    {
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/6563cebc-9e88-4c3d-9aa4-9e6dfd01d340/icon-suport___e652f419c9ef45db70fdaf1845293dc3.svg",
+      "text": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"tel:+40212700050\">Comenzi si suport</a></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"tel:+40212700050\"><strong>+40 21 270 0050</strong></a></p>"
+    },
+    {
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/fa5f5108-befe-4176-9e64-ccf8fc5dca37/icon-clock___547c444363d17f9564659ef1c2d83df4.svg",
+      "text": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/contact\">Program de lucru</a></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/contact\"><strong>Detalii aici</strong></a></p>"
+    },
+    {
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/aea630f6-c5d8-4bcf-b17a-d77bfd0855c3/icon-map___852fba954469f1c98aab577bbb49a446.svg",
+      "text": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/contact\">Showroom / Pick-up point</a></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"/contact\"><strong>Bd Unirii nr. 64, Bucuresti</strong></a></p>"
+    }
+  ],
+  "right": {
+    "socials": [
+      {
+        "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/54480880-cf1a-409b-b4c3-c3470f029976/icon-facebook-white___2f06509d59fcd201d1b42c30a4ecce9a.svg",
+        "link": "https://www.facebook.com/F64.ro/"
+      },
+      {
+        "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/f6c83ab3-0afe-4349-9028-3f2e6ed82ccc/icon-instagram-white___3ddc566bf14a962283d22f31198edfe4.svg",
+        "link": "https://www.instagram.com/f64studio/"
+      },
+      {
+        "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/73e8450d-7219-4a6a-a038-60258c39bd9d/icon-twitter-white___0d11ccbc7a3b7a79695cbc81b02b239d.svg",
+        "link": "https://twitter.com/f64studio"
+      },
+      {
+        "link": "https://www.youtube.com/channel/UC6e3Vbt6mr-rWDkzSK2hCSw",
+        "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/ce903cd6-bcf0-42b0-bb30-99461a9e582d/icon-youtube-white___1f8911512f8f83402f410b4fc3f78320.svg"
+      }
+    ],
+    "images": [
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d5438257-de0e-48e7-bdde-e83cfc651993/71d19f6a-2eb3-4bbf-9ca0-ea0ef019a919___53df9616b595cc2a5c6c9349f8363a21.webp",
+        "link": "https://anpc.ro/ce-este-sal/"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/6a59a14b-d9be-4f36-8f6a-8d87d976d8dd/2ce5be50-bd2e-43c7-9435-66e1e4899d25___ca3cb8f2c4ca92fd93101407ff65c5b7.png",
+        "link": "https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
+      }
+    ]
+  }
 }

@@ -38,7 +38,7 @@ export default function CategorySlider({ title, categories }: Props) {
                 href={link}
                 class="h-48 flex flex-col items-center justify-center gap-5 bg-white w-full"
               >
-                <img src={image} alt="" />
+                <img src={image} alt="" loading="lazy" />
                 <span class="text-[13px] text-[#33343b] text-center">
                   {name}
                 </span>
