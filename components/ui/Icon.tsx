@@ -4,21 +4,35 @@ import type { JSX } from "preact";
 export type AvailableIcons =
   | "account_circle"
   | "call"
+  | "cart"
   | "check-circle"
   | "chevron-right"
   | "close"
   | "error"
   | "favorite"
   | "flower"
+  | "heart"
   | "home_pin"
   | "local_shipping"
   | "menu"
+  | "chevron-right-bold"
+  | "card"
+  | "barcode"
+  | "round-check"
+  | "home"
+  | "medal"
+  | "delivery"
+  | "box"
+  | "guarantee"
+  | "microphone"
   | "pan_zoom"
   | "search"
   | "sell"
   | "share"
   | "shopping_bag"
-  | "trash";
+  | "phone"
+  | "trash"
+  | "user";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

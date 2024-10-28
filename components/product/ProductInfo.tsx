@@ -1,15 +1,13 @@
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
-import ShippingSimulationForm from "../shipping/Form.tsx";
 import WishlistButton from "../wishlist/WishlistButton.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
 import OutOfStock from "./OutOfStock.tsx";
-import ProductSelector from "./ProductVariantSelector.tsx";
+import Icon from "../ui/Icon.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -24,14 +22,11 @@ function ProductInfo({ page }: Props) {
 
   const { breadcrumbList, product } = page;
   const { productID, offers, isVariantOf } = product;
-  const description = product.description || isVariantOf?.description;
   const title = isVariantOf?.name ?? product.name;
 
   const { price = 0, listPrice, seller = "1", availability } = useOffer(offers);
-
-  const percent = listPrice && price
-    ? Math.round(((listPrice - price) / listPrice) * 100)
-    : 0;
+  const formattedPrice = formatPrice(price)?.replace(/,\d+/g, "");
+  const cents = formatPrice(price)?.match(/\,\d+/g)?.[0].slice(1);
 
   const breadcrumb = {
     ...breadcrumbList,
@@ -58,84 +53,90 @@ function ProductInfo({ page }: Props) {
     },
   });
 
-  //Checks if the variant name is "title"/"default title" and if so, the SKU Selector div doesn't render
-  const hasValidVariants = isVariantOf?.hasVariant?.some(
-    (variant) =>
-      variant?.name?.toLowerCase() !== "title" &&
-      variant?.name?.toLowerCase() !== "default title",
-  ) ?? false;
-
   return (
-    <div {...viewItemEvent} class="flex flex-col" id={id}>
-      {/* Price tag */}
-      <span
-        class={clx(
-          "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
-          percent < 1 && "opacity-0",
-          "w-fit",
-        )}
-      >
-        {percent} % off
-      </span>
-
+    <div {...viewItemEvent} class="flex flex-col gap-10" id={id}>
       {/* Product Name */}
-      <span class={clx("text-3xl font-semibold", "pt-4")}>{title}</span>
+      <span class="text-lg font-bold leading-normal">{title}</span>
 
-      {/* Prices */}
-      <div class="flex gap-3 pt-1">
-        <span class="text-3xl font-semibold text-base-400">
-          {formatPrice(price, offers?.priceCurrency)}
-        </span>
-        <span class="line-through text-sm font-medium text-gray-400">
-          {formatPrice(listPrice, offers?.priceCurrency)}
-        </span>
-      </div>
+      <div class="flex justify-between">
+        <div class="flex flex-col gap-1.5">
+          <div class="flex items-center gap-1">
+            <Icon id="card" size={16} class="text-[#f68e1e]" />
 
-      {/* Sku Selector */}
-      {hasValidVariants && (
-        <div className="mt-4 sm:mt-8">
-          <ProductSelector product={product} />
+            <span class="text-xs font-bold">
+              Rate de la{" "}
+              <span class="text-[#f68e1e]">
+                554,<span class="inline-block -translate-y-1 text-xs">12</span>
+                {" "}
+                lei
+              </span>
+            </span>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <Icon id="barcode" size={16} class="text-[#f68e1e]" />
+            <span class="text-[#33343b] text-xs">125061237</span>
+          </div>
         </div>
-      )}
 
-      {/* Add to Cart and Favorites button */}
-      <div class="mt-4 sm:mt-10 flex flex-col gap-2">
-        {availability === "https://schema.org/InStock"
-          ? (
-            <>
-              <AddToCartButton
-                item={item}
-                seller={seller}
-                product={product}
-                class="btn btn-primary no-animation"
-                disabled={false}
-              />
-              <WishlistButton item={item} />
-            </>
-          )
-          : <OutOfStock productID={productID} />}
-      </div>
+        {/* Add to Cart and Favorites button */}
+        <div class="mt-4 sm:mt-0 flex flex-col w-[250px] bg-[#f8f8f8] p-8">
+          {availability === "https://schema.org/InStock"
+            ? (
+              <div>
+                <span class="text-[28px] font-bold text-[#f68e1e]">
+                  {formattedPrice},<span class="-translate-y-1.5 inline-block text-2xl">
+                    {cents}
+                  </span>{" "}
+                  lei
+                </span>
 
-      {/* Shipping Simulation */}
-      <div class="mt-8">
-        <ShippingSimulationForm
-          items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
-        />
-      </div>
+                <div class="flex flex-col gap-2">
+                  <AddToCartButton
+                    item={item}
+                    seller={seller}
+                    product={product}
+                    class="bg-[#f68e1e] w-full h-10 rounded-md text-sm text-white flex justify-center items-center gap-2"
+                    disabled={false}
+                  />
+                  <WishlistButton item={item} />
 
-      {/* Description card */}
-      <div class="mt-4 sm:mt-6">
-        <span class="text-sm">
-          {description && (
-            <details>
-              <summary class="cursor-pointer">Description</summary>
-              <div
-                class="ml-2 mt-2"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-            </details>
-          )}
-        </span>
+                  <div class="flex flex-col gap-2.5 mt-2">
+                    <div class="flex items-center gap-1.5 text-[#28a745] text-xs font-bold">
+                      <Icon id="round-check" size={16} />
+                      In stoc magazin
+                    </div>
+                    <div class="flex items-center gap-1.5 text-[#33343b] text-xs">
+                      <Icon id="medal" size={16} />
+                      <span class="font-bold">13299</span> puncte de fidelitate
+                    </div>
+                    <div class="flex items-center gap-1.5 text-[#33343b] text-xs">
+                      <Icon id="delivery" size={16} />
+                      Pana la 2 zile lucratoare
+                    </div>
+                    <div class="flex items-center gap-1.5 text-[#33343b] text-xs">
+                      <Icon id="box" size={16} />
+                      Deschidere la livrare
+                    </div>
+                    <div class="flex items-center gap-1.5 text-[#33343b] text-xs">
+                      <Icon id="guarantee" size={16} />
+                      Garantie inclusa:
+                    </div>
+
+                    <ul class="list-disc pl-12 marker:text-[#f68e1e] flex flex-col gap-1.5">
+                      <li class="text-[#33343b] text-xs">
+                        Persoane fizice: 24 luni
+                      </li>
+                      <li class="text-[#33343b] text-xs">
+                        Persoane juridice: 24 luni
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )
+            : <OutOfStock productID={productID} />}
+        </div>
       </div>
     </div>
   );

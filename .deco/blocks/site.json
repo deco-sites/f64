@@ -4,9 +4,9 @@
     "title": "Storefront",
     "jsonLDs": [],
     "noIndexing": false,
-    "description": "Build profitable websites with deco.cx",
+    "description": "F64, magazinul pasionatilor de fotografie, va ofera cea mai variata gama de echipamente fotografice, aparate foto, camere video, obiective si accesorii.",
     "titleTemplate": "%s - F64.ro",
-    "descriptionTemplate": "%s | deco.cx",
+    "descriptionTemplate": "%s | F64.ro",
     "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/389e6341-b122-4245-af6a-f32c58233c47/rsz_favicon_f64_header.png"
   },
   "theme": {
@@ -34,16 +34,13 @@
   ],
   "routes": [
     {
-      "__resolveType": "shopify/loaders/proxy.ts",
+      "__resolveType": "vtex/loaders/proxy.ts",
       "extraPathsToProxy": [],
       "includeSiteMap": [],
       "excludePathsFromDecoSiteMap": []
     },
     {
       "__resolveType": "website/loaders/pages.ts"
-    },
-    {
-      "__resolveType": "website/loaders/redirects.ts"
     }
   ],
   "caching": {
@@ -52,7 +49,7 @@
   "commerce": {
     "platform": "other"
   },
-  "platform": "shopify",
+  "platform": "vtex",
   "__resolveType": "site/apps/site.ts",
   "firstByteThresholdMS": false,
   "abTesting": {

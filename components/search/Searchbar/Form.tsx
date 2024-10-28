@@ -20,10 +20,13 @@ import { useId } from "../../../sdk/useId.ts";
 import { useComponent } from "../../../sections/Component.tsx";
 import Icon from "../../ui/Icon.tsx";
 import type { Props as SuggestionProps } from "./Suggestions.tsx";
+
 // When user clicks on the search button, navigate it to
 export const ACTION = "/s";
+
 // Querystring param used when navigating the user
 export const NAME = "q";
+
 export interface SearchbarProps {
   /**
    * @title Placeholder
@@ -34,9 +37,11 @@ export interface SearchbarProps {
   /** @description Loader to run when suggesting new elements */
   loader: Resolved<Suggestion | null>;
 }
+
 const script = (formId: string, name: string, popupId: string) => {
   const form = document.getElementById(formId) as HTMLFormElement | null;
   const input = form?.elements.namedItem(name) as HTMLInputElement | null;
+
   form?.addEventListener("submit", () => {
     const search_term = input?.value;
     if (search_term) {
@@ -46,6 +51,7 @@ const script = (formId: string, name: string, popupId: string) => {
       });
     }
   });
+
   // Keyboard event listeners
   addEventListener("keydown", (e: KeyboardEvent) => {
     const isK = e.key === "k" || e.key === "K" || e.keyCode === 75;
@@ -59,30 +65,34 @@ const script = (formId: string, name: string, popupId: string) => {
     }
   });
 };
+
 const Suggestions = import.meta.resolve("./Suggestions.tsx");
+
 export default function Searchbar(
   { placeholder = "What are you looking for?", loader }: SearchbarProps,
 ) {
   const slot = useId();
+
   return (
-    <div
-      class="w-full grid gap-8 px-4 py-6"
-      style={{ gridTemplateRows: "min-content auto" }}
-    >
-      <form id={SEARCHBAR_INPUT_FORM_ID} action={ACTION} class="join">
-        <button
-          type="submit"
-          class="btn join-item btn-square no-animation"
-          aria-label="Search"
-          for={SEARCHBAR_INPUT_FORM_ID}
-          tabIndex={-1}
-        >
-          <span class="loading loading-spinner loading-xs hidden [.htmx-request_&]:inline" />
-          <Icon id="search" class="inline [.htmx-request_&]:hidden" />
-        </button>
+    <div class="w-full">
+      <form
+        id={SEARCHBAR_INPUT_FORM_ID}
+        action={ACTION}
+        class="flex max-w-[600px] w-full relative"
+      >
+        <Icon
+          id="search"
+          size={28}
+          class="absolute left-3 top-1/2 -translate-y-1/2 text-[#f68e1e]"
+        />
+        <div
+          class="triangle absolute -left-[15px] top-1/2 -translate-y-1/2 -rotate-90"
+          style={{ "--triangle-color": "white", "--triangle-size": "10px" }}
+        />
+
         <input
           tabIndex={0}
-          class="input input-bordered join-item flex-grow"
+          class="h-[38px] flex-1 rounded pl-11 text-sm"
           name={NAME}
           placeholder={placeholder}
           autocomplete="off"
@@ -95,14 +105,11 @@ export default function Searchbar(
           hx-indicator={`#${SEARCHBAR_INPUT_FORM_ID}`}
           hx-swap="innerHTML"
         />
-        <label
-          type="button"
-          class="join-item btn btn-ghost btn-square hidden sm:inline-flex no-animation"
-          for={SEARCHBAR_POPUP_ID}
-          aria-label="Toggle searchbar"
-        >
-          <Icon id="close" />
-        </label>
+        <Icon
+          id="microphone"
+          size={20}
+          class="absolute right-3 top-1/2 -translate-y-1/2 text-[#f68e1e]"
+        />
       </form>
 
       {/* Suggestions slot */}

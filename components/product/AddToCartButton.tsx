@@ -4,12 +4,14 @@ import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
-import QuantitySelector from "../ui/QuantitySelector.tsx";
+import Icon from "../ui/Icon.tsx";
+
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
   seller: string;
   item: AnalyticsItem;
 }
+
 const onClick = () => {
   event?.stopPropagation();
   const button = event?.currentTarget as HTMLButtonElement | null;
@@ -19,20 +21,10 @@ const onClick = () => {
   );
   window.STOREFRONT.CART.addToCart(item, platformProps);
 };
-const onChange = () => {
-  const input = event?.currentTarget as HTMLInputElement;
-  const productID = input?.closest("div[data-cart-item]")?.getAttribute(
-    "data-item-id",
-  )!;
-  const quantity = Number(input.value);
-  if (!input.validity.valid) {
-    return;
-  }
-  window.STOREFRONT.CART.setQuantity(productID, quantity);
-};
+
 // Copy cart form values into AddToCartButton
 const onLoad = (id: string) => {
-  window.STOREFRONT.CART.subscribe((sdk) => {
+  window.STOREFRONT.CART.subscribe((_sdk) => {
     const container = document.getElementById(id);
     const checkbox = container?.querySelector<HTMLInputElement>(
       'input[type="checkbox"]',
@@ -40,8 +32,7 @@ const onLoad = (id: string) => {
     const input = container?.querySelector<HTMLInputElement>(
       'input[type="number"]',
     );
-    const itemID = container?.getAttribute("data-item-id")!;
-    const quantity = sdk.getQuantity(itemID) || 0;
+    const quantity = 1;
     if (!input || !checkbox) {
       return;
     }
@@ -107,6 +98,7 @@ function AddToCartButton(props: Props) {
   const { product, item, class: _class } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
+
   return (
     <div
       id={id}
@@ -119,22 +111,14 @@ function AddToCartButton(props: Props) {
       <input type="checkbox" class="hidden peer" />
 
       <button
+        type="button"
         disabled
-        class={clx("flex-grow peer-checked:hidden", _class?.toString())}
+        class={clx("peer-checked:hidden", _class?.toString())}
         hx-on:click={useScript(onClick)}
       >
-        Add to Cart
+        <Icon id="cart" size={24} class="scale-75" />
+        Adaugă în coș
       </button>
-
-      {/* Quantity Input */}
-      <div class="flex-grow hidden peer-checked:flex">
-        <QuantitySelector
-          disabled
-          min={0}
-          max={100}
-          hx-on:change={useScript(onChange)}
-        />
-      </div>
 
       <script
         type="module"

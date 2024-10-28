@@ -1,18 +1,16 @@
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import Icon from "../ui/Icon.tsx";
 import Slider from "../ui/Slider.tsx";
-import ProductImageZoom from "./ProductImageZoom.tsx";
 
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;
 }
 
-const WIDTH = 820;
-const HEIGHT = 615;
+const WIDTH = 450;
+const HEIGHT = 450;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 /**
@@ -23,7 +21,6 @@ const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
  */
 export default function GallerySlider(props: Props) {
   const id = useId();
-  const zoomId = `${id}-zoom`;
 
   if (!props.page) {
     throw new Error("Missing Product Details Page Info");
@@ -45,92 +42,64 @@ export default function GallerySlider(props: Props) {
 
   return (
     <>
-      <div
-        id={id}
-        class="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-[min-content_1fr] gap-5"
-      >
-        {/* Image Slider */}
-        <div class="col-start-1 col-span-1 sm:col-start-2">
-          <div class="relative h-min flex-grow">
-            <Slider class="carousel carousel-center gap-6 w-full">
-              {images.map((img, index) => (
-                <Slider.Item index={index} class="carousel-item w-full">
-                  <Image
-                    class="w-full"
-                    sizes="(max-width: 640px) 100vw, 40vw"
-                    style={{ aspectRatio: ASPECT_RATIO }}
-                    src={img.url!}
-                    alt={img.alternateName}
-                    width={WIDTH}
-                    height={HEIGHT}
-                    // Preload LCP image for better web vitals
-                    preload={index === 0}
-                    loading={index === 0 ? "eager" : "lazy"}
-                  />
-                </Slider.Item>
-              ))}
-            </Slider>
-
-            <Slider.PrevButton
-              class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
-              disabled
-            >
-              <Icon id="chevron-right" class="rotate-180" />
-            </Slider.PrevButton>
-
-            <Slider.NextButton
-              class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
-              disabled={images.length < 2}
-            >
-              <Icon id="chevron-right" />
-            </Slider.NextButton>
-
-            <div class="absolute top-2 right-2 bg-base-100 rounded-full">
-              <label class="btn btn-ghost hidden sm:inline-flex" for={zoomId}>
-                <Icon id="pan_zoom" />
-              </label>
-            </div>
-          </div>
-        </div>
-
+      <div id={id} class="flex gap-10">
         {/* Dots */}
-        <div class="col-start-1 col-span-1">
-          <ul
-            class={clx(
-              "carousel carousel-center",
-              "sm:carousel-vertical",
-              "gap-2",
-              "max-w-full",
-              "overflow-x-auto",
-              "sm:overflow-y-auto",
-            )}
-            style={{ maxHeight: "600px" }}
-          >
+        <ul class="carousel carousel-center sm:carousel-vertical gap-2 max-w-full overflow-x-auto sm:overflow-y-auto max-h-[450px]">
+          {images.map((img, index) => (
+            <li class="carousel-item size-[50px]">
+              <Slider.Dot index={index}>
+                <Image
+                  class="rounded object-cover"
+                  width={50}
+                  height={50}
+                  src={img.url!}
+                  alt={img.alternateName}
+                />
+              </Slider.Dot>
+            </li>
+          ))}
+        </ul>
+
+        <div class="w-full max-w-[450px] relative">
+          <Slider class="carousel carousel-center gap-6 w-full">
             {images.map((img, index) => (
-              <li class="carousel-item w-16 h-16">
-                <Slider.Dot index={index}>
-                  <Image
-                    style={{ aspectRatio: "1 / 1" }}
-                    class="group-disabled:border-base-400 border rounded object-cover w-full h-full"
-                    width={64}
-                    height={64}
-                    src={img.url!}
-                    alt={img.alternateName}
-                  />
-                </Slider.Dot>
-              </li>
+              <Slider.Item index={index} class="carousel-item w-full">
+                <Image
+                  class="w-full"
+                  sizes="(max-width: 640px) 100vw, 40vw"
+                  style={{ aspectRatio: ASPECT_RATIO }}
+                  src={img.url!}
+                  alt={img.alternateName}
+                  width={WIDTH}
+                  height={HEIGHT}
+                  // Preload LCP image for better web vitals
+                  preload={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
+                />
+              </Slider.Item>
             ))}
-          </ul>
+          </Slider>
+
+          <div class="absolute left-0 top-1/2 -translate-y-1/2 flex justify-between w-full pointer-events-none">
+            <Slider.PrevButton class="size-6 flex justify-center items-center pointer-events-auto group">
+              <Icon
+                id="chevron-right-bold"
+                size={24}
+                class="rotate-180 shrink-0 text-[#f68e1e] group-disabled:text-[#676976]"
+              />
+            </Slider.PrevButton>
+            <Slider.NextButton class="size-6 flex justify-center items-center pointer-events-auto group">
+              <Icon
+                id="chevron-right-bold"
+                size={24}
+                class="shrink-0 text-[#f68e1e] group-disabled:text-[#676976]"
+              />
+            </Slider.NextButton>
+          </div>
         </div>
 
         <Slider.JS rootId={id} />
       </div>
-      <ProductImageZoom
-        id={zoomId}
-        images={images}
-        width={700}
-        height={Math.trunc((700 * HEIGHT) / WIDTH)}
-      />
     </>
   );
 }

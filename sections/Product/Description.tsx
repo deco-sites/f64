@@ -1,7 +1,4 @@
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
-import ImageGallerySlider from "../../components/product/Gallery.tsx";
-import ProductInfo from "../../components/product/ProductInfo.tsx";
-import Breadcrumb from "../../components/ui/Breadcrumb.tsx";
 import Section from "../../components/ui/Section.tsx";
 
 export interface Props {
@@ -9,7 +6,7 @@ export interface Props {
   page: ProductDetailsPage | null;
 }
 
-export default function ProductDetails({ page }: Props) {
+export default function Description({ page }: Props) {
   /**
    * Rendered when a not found is returned by any of the loaders run on this page
    */
@@ -26,20 +23,23 @@ export default function ProductDetails({ page }: Props) {
     );
   }
 
-  return (
-    <div class="bg-white mb-8">
-      <div class="container flex flex-col gap-8 w-full pt-4 pb-8 px-5 sm:px-0">
-        <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
+  const {
+    product: { description: _description, isVariantOf },
+  } = page;
+  const description = _description || isVariantOf?.description;
 
-        <div class="flex">
-          <div class="w-1/2">
-            <ImageGallerySlider page={page} />
-          </div>
-          <div class="w-1/2">
-            <ProductInfo page={page} />
-          </div>
-        </div>
-      </div>
+  return (
+    <div class="container py-7 !px-7 flex flex-col gap-6 mb-8 bg-white">
+      <span class="text-[#33343b] text-xl relative">
+        <div class="h-2 w-8 bg-[#f68e1e] absolute -left-12 top-1/2 -translate-y-1/2" />
+        <span class="font-bold">Descriere</span> {isVariantOf?.name}
+      </span>
+      {description && (
+        <div
+          class="ml-2 mt-2"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+      )}
     </div>
   );
 }

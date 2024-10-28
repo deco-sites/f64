@@ -37,7 +37,10 @@ export default function Benefits({ benefits }: Props) {
           />
 
           <div class="flex flex-col items-center w-full absolute left-1/2 -translate-x-1/2 top-[65%] pointer-events-none opacity-0 group-hover:pointer-events-auto group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-            <div class="triangle shrink-0" />
+            <div
+              class="triangle shrink-0"
+              style={{ "--triangle-color": "#333", "--triangle-size": "15px" }}
+            />
             <div
               class="w-full min-h-[100px] bg-[#333] text-center text-white break-line [&_a]:text-[#f68e1e] [&_a:hover]:underline [&_p:empty]:h-3 p-5 text-[13px] leading-4"
               dangerouslySetInnerHTML={{ __html: benefit.textHover }}

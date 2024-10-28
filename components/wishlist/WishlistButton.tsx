@@ -1,13 +1,14 @@
 import { useScript } from "@deco/deco/hooks";
 import type { AnalyticsItem } from "apps/commerce/types.ts";
-import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import Icon from "../ui/Icon.tsx";
+
 interface Props {
   variant?: "full" | "icon";
   item: AnalyticsItem;
 }
+
 const onLoad = (id: string, productID: string) =>
   window.STOREFRONT.WISHLIST.subscribe((sdk) => {
     const button = document.getElementById(id) as HTMLButtonElement;
@@ -20,9 +21,12 @@ const onLoad = (id: string, productID: string) =>
     );
     const span = button.querySelector("span");
     if (span) {
-      span.innerHTML = inWishlist ? "Remove from wishlist" : "Add to wishlist";
+      span.innerHTML = inWishlist
+        ? "Remove from wishlist"
+        : "Adaugă in wishlist";
     }
   });
+
 const onClick = (productID: string, productGroupID: string) => {
   const button = event?.currentTarget as HTMLButtonElement;
   const user = window.STOREFRONT.USER.getUser();
@@ -33,6 +37,7 @@ const onClick = (productID: string, productGroupID: string) => {
     window.alert("Please login to add the product to your wishlist");
   }
 };
+
 function WishlistButton({ item, variant = "full" }: Props) {
   // deno-lint-ignore no-explicit-any
   const productID = (item as any).item_id;
@@ -54,16 +59,17 @@ function WishlistButton({ item, variant = "full" }: Props) {
         {...addToWishlistEvent}
         aria-label="Add to wishlist"
         hx-on:click={useScript(onClick, productID, productGroupID)}
-        class={clx(
-          "btn no-animation",
-          variant === "icon"
-            ? "btn-circle btn-ghost btn-sm"
-            : "btn-primary btn-outline gap-2 w-full",
-        )}
+        class="rounded-md h-10 border border-[#d0d2de] flex items-center justify-center gap-1 text-[#676976]"
       >
-        <Icon id="favorite" class="[.htmx-request_&]:hidden" fill="none" />
+        <Icon
+          id="heart"
+          size={24}
+          class="[.htmx-request_&]:hidden scale-[70%]"
+        />
         {variant === "full" && (
-          <span class="[.htmx-request_&]:hidden">Add to wishlist</span>
+          <span class="[.htmx-request_&]:hidden text-sm">
+            Adaugă in wishlist
+          </span>
         )}
         <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
       </button>
