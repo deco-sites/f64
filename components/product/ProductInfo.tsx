@@ -96,7 +96,7 @@ function ProductInfo({ page }: Props) {
                     item={item}
                     seller={seller}
                     product={product}
-                    class="bg-[#f68e1e] w-full h-10 rounded-md text-sm text-white flex justify-center items-center gap-2"
+                    class="bg-[#f68e1e] hover:bg-[#f0810b] w-full h-10 rounded-md text-sm text-white flex justify-center items-center gap-2"
                     disabled={false}
                   />
                   <WishlistButton item={item} />

@@ -3669,9 +3669,6 @@ details.collapse summary::-webkit-details-marker {
 .flex {
   display: flex;
 }
-.inline-flex {
-  display: inline-flex;
-}
 .table {
   display: table;
 }
@@ -5285,6 +5282,11 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(102 102 102 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#f0810b\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 129 11 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-\[\#f68e1e\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(246 142 30 / var(--tw-bg-opacity));
@@ -5403,10 +5405,6 @@ details.collapse summary::-webkit-details-marker {
 .group:disabled .group-disabled\:text-\[\#676976\] {
   --tw-text-opacity: 1;
   color: rgb(103 105 118 / var(--tw-text-opacity));
-}
-
-.peer:checked ~ .peer-checked\:hidden {
-  display: none;
 }
 
 .peer:checked ~ .peer-checked\:grid-rows-\[1fr\] {

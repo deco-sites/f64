@@ -32,12 +32,11 @@ const onLoad = (id: string) => {
     const input = container?.querySelector<HTMLInputElement>(
       'input[type="number"]',
     );
-    const quantity = 1;
+
     if (!input || !checkbox) {
       return;
     }
-    input.value = quantity.toString();
-    checkbox.checked = quantity > 0;
+
     // enable interactivity
     container?.querySelectorAll<HTMLButtonElement>("button").forEach(
       (node) => (node.disabled = false),
@@ -109,11 +108,12 @@ function AddToCartButton(props: Props) {
       )}
     >
       <input type="checkbox" class="hidden peer" />
+      <input class="hidden" inputMode="numeric" type="number" value="1" />
 
       <button
         type="button"
         disabled
-        class={clx("peer-checked:hidden", _class?.toString())}
+        class={clx("cursor-pointer", _class?.toString())}
         hx-on:click={useScript(onClick)}
       >
         <Icon id="cart" size={24} class="scale-75" />

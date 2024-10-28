@@ -92,7 +92,7 @@ export default function Searchbar(
 
         <input
           tabIndex={0}
-          class="h-[38px] flex-1 rounded pl-11 text-sm"
+          class="h-[38px] flex-1 rounded pl-11 text-sm outline-0"
           name={NAME}
           placeholder={placeholder}
           autocomplete="off"
