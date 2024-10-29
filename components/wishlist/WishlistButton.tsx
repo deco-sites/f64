@@ -59,7 +59,7 @@ function WishlistButton({ item, variant = "full" }: Props) {
         {...addToWishlistEvent}
         aria-label="Add to wishlist"
         hx-on:click={useScript(onClick, productID, productGroupID)}
-        class="rounded-md h-10 border border-[#d0d2de] flex items-center justify-center gap-1 text-[#676976]"
+        class="rounded-md h-14 lg:h-10 border border-[#d0d2de] flex items-center justify-center gap-1 text-[#676976]"
       >
         <Icon
           id="heart"

@@ -8,12 +8,12 @@ interface Props {
 
 function Breadcrumb({ itemListElement = [] }: Props) {
   return (
-    <ul class="flex text-sm text-[#676976]">
-      <li class="flex items-center">
+    <ul class="text-sm text-[#676976] max-lg:px-4 truncate">
+      <li class="inline">
         <a href="/">
-          <Icon id="home" size={18} class="text-[#f68e1e]" />
+          <Icon id="home" size={18} class="text-[#f68e1e] inline" />
         </a>
-        <Icon id="chevron-right" size={14} class="block mx-2" />
+        <Icon id="chevron-right" size={14} class="inline-block mx-2" />
       </li>
 
       {itemListElement
@@ -25,10 +25,10 @@ function Breadcrumb({ itemListElement = [] }: Props) {
             : { href: relative(item), class: "hover:text-[#f68e1e]" };
 
           return (
-            <li class="flex items-center">
+            <li class="inline">
               <Component {...Props}>{name}</Component>
               {index < itemListElement.length - 1 && (
-                <Icon id="chevron-right" size={14} class="block mx-1" />
+                <Icon id="chevron-right" size={14} class="inline-block mx-1" />
               )}
             </li>
           );

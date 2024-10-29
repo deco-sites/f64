@@ -11,7 +11,7 @@ import Image from "apps/website/components/Image.tsx";
  */
 interface Item {
   image: ImageWidget;
-  /** @title Describe image */
+  /** @title Describe the image */
   alt: string;
   link: string;
 }

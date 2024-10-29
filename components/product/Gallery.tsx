@@ -28,23 +28,18 @@ export default function GallerySlider(props: Props) {
 
   const {
     page: {
-      product: { name, isVariantOf, image: pImages },
+      product: { isVariantOf, image: pImages },
     },
   } = props;
 
-  // Filter images when image's alt text matches product name
-  // More info at: https://community.shopify.com/c/shopify-discussions/i-can-not-add-multiple-pictures-for-my-variants/m-p/2416533
-  const groupImages = isVariantOf?.image ?? pImages ?? [];
-  const filtered = groupImages.filter((img) =>
-    name?.includes(img.alternateName || "")
-  );
-  const images = filtered.length > 0 ? filtered : groupImages;
+  const images = isVariantOf?.image ?? pImages ?? [];
 
   return (
     <>
-      <div id={id} class="flex gap-10">
+      <div id={id} class="flex justify-center gap-10">
         {/* Dots */}
-        <ul class="carousel carousel-center sm:carousel-vertical gap-2 max-w-full overflow-x-auto sm:overflow-y-auto max-h-[450px]">
+
+        <ul class="hidden sm:carousel carousel-center carousel-vertical gap-2 max-w-full overflow-x-auto sm:overflow-y-auto max-h-[450px">
           {images.map((img, index) => (
             <li class="carousel-item size-[50px]">
               <Slider.Dot index={index}>

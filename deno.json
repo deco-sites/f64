@@ -33,7 +33,7 @@
     "simple-git": "npm:simple-git@^3.25.0",
     "std/": "https://deno.land/std@0.190.0/",
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.106.2/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.62.16/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.63.0/",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "daisyui": "npm:daisyui@4.6.0",
@@ -46,7 +46,7 @@
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",
     "update": "deno run -Ar https://deco.cx/update",
-    "check": "deno fmt && deno lint && deno check dev.ts main.ts --allow-import",
+    "check": "deno fmt && deno lint && deno check dev.ts main.ts",
     "install": "deno eval 'import \"deco/scripts/apps/install.ts\"'",
     "uninstall": "deno eval 'import \"deco/scripts/apps/uninstall.ts\"'",
     "bundle": "deno run -A jsr:@deco/deco/scripts/bundle site",
@@ -70,11 +70,16 @@
   ],
   "lint": {
     "rules": {
-      "exclude": ["no-window"],
-      "tags": ["fresh", "recommended"]
+      "exclude": [
+        "no-window"
+      ],
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
     }
   },
-  "nodeModulesDir": "auto",
+  "nodeModulesDir": true,
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"

@@ -56,6 +56,9 @@ interface Right {
 }
 
 interface Props {
+  /**
+   * @title Navigation
+   */
   footerNav: FooterNav[];
   left: Left[];
   right: Right;

@@ -31,11 +31,11 @@ export default function ProductDetails({ page }: Props) {
       <div class="container flex flex-col gap-8 w-full pt-4 pb-8 px-5 sm:px-0">
         <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
 
-        <div class="flex">
-          <div class="w-1/2">
+        <div class="flex flex-col lg:flex-row max-lg:px-4">
+          <div class="lg:w-1/2">
             <ImageGallerySlider page={page} />
           </div>
-          <div class="w-1/2">
+          <div class="lg:w-1/2">
             <ProductInfo page={page} />
           </div>
         </div>

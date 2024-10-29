@@ -36,7 +36,7 @@ export default function Benefits({ benefits }: Props) {
             class="text-center"
           />
 
-          <div class="flex flex-col items-center w-full absolute left-1/2 -translate-x-1/2 top-[65%] pointer-events-none opacity-0 group-hover:pointer-events-auto group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+          <div class="flex flex-col items-center w-full absolute left-1/2 -translate-x-1/2 top-[65%] pointer-events-none opacity-0 group-hover:pointer-events-auto group-hover:opacity-100 transition-opacity duration-300 ease-in-out z-10">
             <div
               class="triangle shrink-0"
               style={{ "--triangle-color": "#333", "--triangle-size": "15px" }}

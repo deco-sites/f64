@@ -1,6 +1,6 @@
 import { asResolved } from "@deco/deco";
 import type { Resolved } from "@deco/deco";
-import { useScript } from "@deco/deco/hooks";
+import { useDevice, useScript } from "@deco/deco/hooks";
 /**
  * We use a custom route at /s?q= to perform the search. This component
  * redirects the user to /s?q={term} when the user either clicks on the
@@ -72,27 +72,31 @@ export default function Searchbar(
   { placeholder = "What are you looking for?", loader }: SearchbarProps,
 ) {
   const slot = useId();
+  const isDesktop = useDevice() === "desktop";
 
   return (
     <div class="w-full">
       <form
         id={SEARCHBAR_INPUT_FORM_ID}
         action={ACTION}
-        class="flex max-w-[600px] w-full relative"
+        class="flex lg:max-w-[600px] w-full relative"
       >
         <Icon
           id="search"
           size={28}
           class="absolute left-3 top-1/2 -translate-y-1/2 text-[#f68e1e]"
         />
-        <div
-          class="triangle absolute -left-[15px] top-1/2 -translate-y-1/2 -rotate-90"
-          style={{ "--triangle-color": "white", "--triangle-size": "10px" }}
-        />
+
+        {isDesktop && (
+          <div
+            class="triangle absolute -left-[15px] top-1/2 -translate-y-1/2 -rotate-90"
+            style={{ "--triangle-color": "white", "--triangle-size": "10px" }}
+          />
+        )}
 
         <input
           tabIndex={0}
-          class="h-[38px] flex-1 rounded pl-11 text-sm outline-0"
+          class="h-[38px] flex-1 rounded px-11 text-sm outline-0 truncate"
           name={NAME}
           placeholder={placeholder}
           autocomplete="off"

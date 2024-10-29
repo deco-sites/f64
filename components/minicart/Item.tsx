@@ -25,7 +25,7 @@ const removeItemHandler = () => {
   }
 };
 function CartItem({ item, index, locale, currency }: Props) {
-  const { image, listPrice, price = Number.POSITIVE_INFINITY, quantity } = item;
+  const { image, price = Number.POSITIVE_INFINITY, quantity } = item;
   const isGift = price < 0.01;
   // deno-lint-ignore no-explicit-any
   const name = (item as any).item_name;
@@ -33,52 +33,46 @@ function CartItem({ item, index, locale, currency }: Props) {
     <fieldset
       // deno-lint-ignore no-explicit-any
       data-item-id={(item as any).item_id}
-      class="grid grid-rows-1 gap-2"
+      class="grid grid-rows-1 gap-4"
       style={{ gridTemplateColumns: "auto 1fr" }}
     >
       <Image
         alt={name}
         src={image}
-        style={{ aspectRatio: "108 / 150" }}
-        width={108}
-        height={150}
-        class="h-full object-contain"
+        width={80}
+        height={80}
+        class="object-contain"
       />
 
       {/* Info */}
       <div class="flex flex-col gap-2">
         {/* Name and Remove button */}
-        <div class="flex justify-between items-center">
-          <legend>{name}</legend>
+        <div class="flex justify-between gap-4">
+          <legend class="text-sm font-medium text-[#333]">{name}</legend>
           <button
-            class={clx(
-              isGift && "hidden",
-              "btn btn-ghost btn-square no-animation",
-            )}
+            type="button"
+            class={clx("size-4", isGift && "hidden")}
             hx-on:click={useScript(removeItemHandler)}
           >
-            <Icon id="trash" size={24} />
+            <Icon id="trash" size={16} class="text-[#727273]" />
           </button>
         </div>
 
-        {/* Price Block */}
-        <div class="flex items-center gap-2">
-          <span class="line-through text-sm">
-            {formatPrice(listPrice, currency, locale)}
-          </span>
-          <span class="text-sm text-secondary">
-            {isGift ? "Grátis" : formatPrice(price, currency, locale)}
-          </span>
-        </div>
-
         {/* Quantity Selector */}
-        <div class={clx(isGift && "hidden")}>
+        <div class={clx("my-4", isGift && "hidden")}>
           <QuantitySelector
             min={0}
             max={QUANTITY_MAX_VALUE}
             value={quantity}
             name={`item::${index}`}
           />
+        </div>
+
+        {/* Price Block */}
+        <div class="flex items-center gap-2">
+          <span class="text-sm text-black">
+            {formatPrice(price, currency, locale)} lei
+          </span>
         </div>
       </div>
     </fieldset>

@@ -1,6 +1,5 @@
 import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
-import Icon from "../ui/Icon.tsx";
 
 interface Props {
   total: number;
@@ -15,24 +14,25 @@ function FreeShippingProgressBar({ target, total, currency, locale }: Props) {
   const percent = Math.floor((total / target) * 100);
 
   return (
-    <div class="flex flex-col w-full gap-2">
-      <div class="flex justify-center items-center gap-2 text-primary">
-        <Icon id="local_shipping" size={24} />
-        {remaining > 0
-          ? (
-            <label for={id}>
-              Just {formatPrice(remaining, currency, locale)}{" "}
-              left to get free shipping!
-            </label>
-          )
-          : <label for={id}>Você ganhou frete grátis!</label>}
+    <div class="w-full shadow-[0_0_10px_rgba(0,0,0,.3)] flex justify-center">
+      <div class="flex flex-col w-full gap-3 py-6 max-w-[328px]">
+        <progress
+          id={id}
+          class="[&::-webkit-progress-value]:bg-[#f68e1e] [&::-webkit-progress-bar]:bg-[#979899] w-full h-2.5 rounded overflow-hidden"
+          value={percent}
+          max={100}
+        />
+        <span class="text-black text-sm font-bold text-center">
+          {remaining > 0
+            ? (
+              <label for={id}>
+                Just {formatPrice(remaining, currency, locale)}{" "}
+                left to get free shipping!
+              </label>
+            )
+            : <label for={id}>Beneficiezi de livrare gratuita!</label>}
+        </span>
       </div>
-      <progress
-        id={id}
-        class="progress progress-primary w-full"
-        value={percent}
-        max={100}
-      />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useScript } from "@deco/deco/hooks";
+import { useDevice, useScript } from "@deco/deco/hooks";
 import { MINICART_DRAWER_ID } from "../../constants.ts";
 import { useId } from "../../sdk/useId.ts";
 import Icon from "../ui/Icon.tsx";
@@ -21,11 +21,12 @@ const onLoad = (id: string) =>
 
 function Bag() {
   const id = useId();
+  const isDesktop = useDevice() === "desktop";
 
   return (
     <>
       <label
-        class="indicator flex items-center gap-2 text-white p-3 hover:bg-[#666] rounded-md"
+        class="indicator flex items-center gap-2 text-white p-3 hover:bg-[#666] rounded-md cursor-pointer"
         for={MINICART_DRAWER_ID}
         aria-label="open cart"
       >
@@ -37,7 +38,7 @@ function Bag() {
           />
         </div>
 
-        <span>Cos</span>
+        {isDesktop && <span>Cos</span>}
       </label>
 
       <script

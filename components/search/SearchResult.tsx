@@ -41,6 +41,7 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
     const temp = new URL(overrides, base);
     const final = new URL(base);
     final.pathname = temp.pathname;
+    // @ts-ignore -
     for (const [key, value] of temp.searchParams.entries()) {
       final.searchParams.set(key, value);
     }

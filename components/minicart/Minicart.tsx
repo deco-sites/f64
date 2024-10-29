@@ -4,7 +4,6 @@ import { MINICART_DRAWER_ID, MINICART_FORM_ID } from "../../constants.ts";
 import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { useComponent } from "../../sections/Component.tsx";
-import Coupon from "./Coupon.tsx";
 import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
 import CartItem, { type Item } from "./Item.tsx";
 export interface Minicart {
@@ -99,10 +98,8 @@ export default function Cart({
       total,
       subtotal,
       coupon,
-      discounts,
       locale,
       currency,
-      enableCoupon = true,
       freeShippingTarget,
       checkoutHref,
     },
@@ -113,6 +110,10 @@ export default function Cart({
   const count = items.length;
   return (
     <>
+      <span class="text-xl text-[#333] font-bold block mt-4 px-6">
+        Cosul meu
+      </span>
+
       <form
         class="contents"
         id={MINICART_FORM_ID}
@@ -167,18 +168,8 @@ export default function Cart({
             )
             : (
               <>
-                {/* Free Shipping Bar */}
-                <div class="px-2 py-4 w-full">
-                  <FreeShippingProgressBar
-                    total={total}
-                    locale={locale}
-                    currency={currency}
-                    target={freeShippingTarget}
-                  />
-                </div>
-
                 {/* Cart Items */}
-                <ul class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full">
+                <ul class="mt-7 flex-grow overflow-y-auto flex flex-col gap-6 w-full px-6">
                   {items.map((item, index) => (
                     <li>
                       <CartItem
@@ -191,55 +182,45 @@ export default function Cart({
                   ))}
                 </ul>
 
+                {/* Free Shipping Bar */}
+                <div class="py-4 w-full">
+                  <FreeShippingProgressBar
+                    total={total}
+                    locale={locale}
+                    currency={currency}
+                    target={freeShippingTarget}
+                  />
+                </div>
+
                 {/* Cart Footer */}
-                <footer class="w-full">
+                <footer class="w-full flex flex-col gap-4 px-6">
                   {/* Subtotal */}
-                  <div class="border-t border-base-200 py-2 flex flex-col">
-                    {discounts > 0 && (
-                      <div class="flex justify-between items-center px-4">
-                        <span class="text-sm">Discounts</span>
-                        <span class="text-sm">
-                          {formatPrice(discounts, currency, locale)}
-                        </span>
-                      </div>
-                    )}
-                    <div class="w-full flex justify-between px-4 text-sm">
-                      <span>Subtotal</span>
-                      <output form={MINICART_FORM_ID}>
-                        {formatPrice(subtotal, currency, locale)}
-                      </output>
-                    </div>
-                    {enableCoupon && <Coupon coupon={coupon} />}
+                  <div class="w-full flex justify-between text-sm text-[#333] mt-2">
+                    <span>Subtotal</span>
+                    <output form={MINICART_FORM_ID}>
+                      {formatPrice(subtotal, currency, locale)} lei
+                    </output>
                   </div>
+                  {/* {enableCoupon && <Coupon coupon={coupon} />} */}
 
                   {/* Total */}
-                  <div class="border-t border-base-200 pt-4 flex flex-col justify-end items-end gap-2 mx-4">
-                    <div class="flex justify-between items-center w-full">
-                      <span>Total</span>
-                      <output
-                        form={MINICART_FORM_ID}
-                        class="font-medium text-xl"
-                      >
-                        {formatPrice(total, currency, locale)}
-                      </output>
-                    </div>
-                    <span class="text-sm text-base-300">
-                      Fees and shipping will be calculated at checkout
-                    </span>
+                  <div class="flex justify-between items-center w-full text-[#333] mb-2 text-xl">
+                    <span>Total</span>
+                    <output form={MINICART_FORM_ID} class="font-medium">
+                      {formatPrice(total, currency, locale)} lei
+                    </output>
                   </div>
 
-                  <div class="p-4">
-                    <a
-                      class="btn btn-primary w-full no-animation"
-                      href={checkoutHref}
-                      hx-on:click={useScript(sendBeginCheckoutEvent)}
-                    >
-                      <span class="[.htmx-request_&]:hidden">
-                        Begin Checkout
-                      </span>
-                      <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
-                    </a>
-                  </div>
+                  <a
+                    class="w-full h-10 flex items-center justify-center text-white bg-[#f68e1e] hover:bg-[#f0810b] transition-colors rounded mb-2 text-sm"
+                    href={checkoutHref}
+                    hx-on:click={useScript(sendBeginCheckoutEvent)}
+                  >
+                    <span class="[.htmx-request_&]:hidden">
+                      Vezi detalii cos
+                    </span>
+                    <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
+                  </a>
                 </footer>
               </>
             )}
