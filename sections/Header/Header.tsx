@@ -156,33 +156,33 @@ const Desktop = (
       {isHome && (
         <div>
           <div class="container mb-11">
-            <div class="fixed left-0 top-0 w-full h-full bg-black/20 pointer-events-none opacity-0 group-hover:opacity-100 z-10 [&:has(+div_[data-hover]:hover)]:opacity-100" />
+            <div class="fixed left-0 top-0 w-full h-full bg-black/20 pointer-events-none opacity-0 z-10 [&:has(+div_[data-hover]:hover)]:opacity-100" />
 
-            <div class="flex flex-col relative py-4 bg-white">
+            <div class="flex flex-col relative bg-white">
               {categories.map(({ icon, name, items }) => {
                 const chunks = chunk(items, 3);
 
                 return (
-                  <div class="group">
+                  <div class="group w-fit">
                     <div
                       data-hover
-                      class="flex items-center gap-2 group px-4 h-10 cursor-pointer bg-white relative hover:z-20 hover:pl-5 [&:has(+div:hover)]:z-20 [&:has(+div:hover)]:pl-5 w-[265px]"
+                      class="flex items-center gap-2 group/inner px-4 h-10 cursor-pointer bg-white relative hover:z-20 hover:pl-5 [&:has(+div:hover)]:z-20 [&:has(+div:hover)]:pl-5 w-[265px] peer group-first:h-12 group-last:h-12 group-first:pt-3 group-last:pb-3"
                     >
-                      <Image
+                      <img
                         src={icon}
                         alt=""
                         width={20}
                         height={20}
-                        class="aspect-square object-contain"
+                        class="object-contain"
                       />
-                      <span class="text-[#333] text-sm group-hover:font-bold">
+                      <span class="text-[#333] text-sm group-hover/inner:font-bold">
                         {name}
                       </span>
                     </div>
 
                     <div
                       data-hover
-                      class="absolute w-[calc(100%-265px)] top-0 right-0 bg-white px-7 py-10 justify-between hidden group-hover:flex hover:flex z-20 h-full"
+                      class="absolute w-[calc(100%-265px)] top-0 right-0 bg-white px-7 py-10 justify-between hidden peer-hover:flex hover:flex z-20 h-full"
                     >
                       {chunks.map((chunk) => (
                         <div class="flex flex-col gap-4">

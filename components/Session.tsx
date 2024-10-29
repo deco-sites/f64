@@ -283,7 +283,7 @@ export default function Session(
         id={MINICART_DRAWER_ID}
         class="drawer-end z-50"
         aside={
-          <Drawer.Aside drawer={MINICART_DRAWER_ID}>
+          <Drawer.Aside drawer={MINICART_DRAWER_ID} title="Cosul meu">
             <div
               class="h-full flex flex-col bg-base-100 justify-center overflow-auto"
               style={{

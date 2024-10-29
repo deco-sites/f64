@@ -110,10 +110,6 @@ export default function Cart({
   const count = items.length;
   return (
     <>
-      <span class="text-xl text-[#333] font-bold block mt-4 px-6">
-        Cosul meu
-      </span>
-
       <form
         class="contents"
         id={MINICART_FORM_ID}

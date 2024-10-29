@@ -5,6 +5,7 @@ import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import Icon from "../ui/Icon.tsx";
+import { MINICART_DRAWER_ID } from "../../constants.ts";
 
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
@@ -12,7 +13,7 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   item: AnalyticsItem;
 }
 
-const onClick = () => {
+const onClick = (MINICART_DRAWER_ID: string) => {
   event?.stopPropagation();
   const button = event?.currentTarget as HTMLButtonElement | null;
   const container = button?.closest<HTMLDivElement>("div[data-cart-item]")!;
@@ -20,6 +21,10 @@ const onClick = () => {
     decodeURIComponent(container.getAttribute("data-cart-item")!),
   );
   window.STOREFRONT.CART.addToCart(item, platformProps);
+
+  setTimeout(() => {
+    document.getElementById(MINICART_DRAWER_ID)?.click();
+  }, 1000);
 };
 
 // Copy cart form values into AddToCartButton
@@ -114,7 +119,7 @@ function AddToCartButton(props: Props) {
         type="button"
         disabled
         class={clx("cursor-pointer", _class?.toString())}
-        hx-on:click={useScript(onClick)}
+        hx-on:click={useScript(onClick, MINICART_DRAWER_ID)}
       >
         <Icon id="cart" size={24} class="scale-75" />
         Adaugă în coș

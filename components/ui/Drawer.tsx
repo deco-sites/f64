@@ -61,21 +61,24 @@ function Drawer(
 function Aside({
   drawer,
   children,
+  title,
 }: {
   drawer: string;
   children: ComponentChildren;
+  title?: string;
 }) {
   return (
-    <div
-      data-aside
-      class="bg-base-100 grid grid-rows-[auto_1fr] h-full"
-      style={{ maxWidth: "100vw" }}
-    >
+    <div data-aside class="bg-base-100 flex flex-col h-full max-w-[100vw]">
       <div class="flex justify-between items-center pl-4 pr-6 pt-3">
         <label for={drawer}>
           <Icon id="x" size={32} />
         </label>
       </div>
+      {title && (
+        <span class="text-xl text-[#333] font-bold block mt-4 px-6">
+          {title}
+        </span>
+      )}
       {children}
     </div>
   );

@@ -26,8 +26,9 @@ function FreeShippingProgressBar({ target, total, currency, locale }: Props) {
           {remaining > 0
             ? (
               <label for={id}>
-                Just {formatPrice(remaining, currency, locale)}{" "}
-                left to get free shipping!
+                Au mai rămas doar {formatPrice(remaining, currency, locale)}
+                {" "}
+                pentru a primi transport gratuit!
               </label>
             )
             : <label for={id}>Beneficiezi de livrare gratuita!</label>}

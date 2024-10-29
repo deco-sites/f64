@@ -117,7 +117,7 @@ export default function Footer({ footerNav, left, right, bottom }: Props) {
               <div class="flex flex-col gap-3">
                 {right.images.map(({ image, link }) => (
                   <a href={link}>
-                    <Image src={image} alt="" width={200} height={500} />
+                    <Image src={image} alt="" width={200} height={50} />
                   </a>
                 ))}
               </div>
@@ -185,7 +185,7 @@ export default function Footer({ footerNav, left, right, bottom }: Props) {
           <div class="flex gap-x-5 gap-y-3 flex-wrap justify-end flex-1">
             {right.images.map(({ image, link }) => (
               <a href={link}>
-                <Image src={image} alt="" width={200} height={500} />
+                <Image src={image} alt="" width={200} height={50} />
               </a>
             ))}
           </div>
