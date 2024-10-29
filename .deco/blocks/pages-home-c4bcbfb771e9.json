@@ -2,12 +2,9 @@
   "name": "Home Page",
   "sections": [
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "website/sections/Seo/SeoV2.tsx",
-        "title": "F64.ro - Magazinul pasionatilor de fotografie.",
-        "description": "F64, magazinul pasionatilor de fotografie, va ofera cea mai variata gama de echipamente fotografice, aparate foto, camere video, obiective si accesorii."
-      }
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "title": "F64.ro - Magazinul pasionatilor de fotografie.",
+      "description": "F64, magazinul pasionatilor de fotografie, va ofera cea mai variata gama de echipamente fotografice, aparate foto, camere video, obiective si accesorii."
     },
     {
       "__resolveType": "Header"
