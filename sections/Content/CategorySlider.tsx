@@ -4,6 +4,7 @@ import Icon from "../../components/ui/Icon.tsx";
 import Section from "../../components/ui/Section.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import { useId } from "../../sdk/useId.ts";
+import Image from "apps/website/components/Image.tsx";
 
 /**
  * @titleBy name
@@ -38,7 +39,13 @@ export default function CategorySlider({ title, categories }: Props) {
                 href={link}
                 class="h-48 flex flex-col items-center justify-center gap-5 bg-white w-full"
               >
-                <img src={image} alt="" loading="lazy" />
+                <Image
+                  src={image}
+                  alt=""
+                  width={53}
+                  height={53}
+                  class="aspect-square object-contain"
+                />
                 <span class="text-[13px] text-[#33343b] text-center">
                   {name}
                 </span>

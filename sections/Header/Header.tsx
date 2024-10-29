@@ -229,6 +229,7 @@ const Desktop = (
                                 alt=""
                                 width={1000}
                                 height={500}
+                                loading={index === 0 ? "eager" : "lazy"}
                               />
                             </a>
                           </Slider.Item>
@@ -326,6 +327,7 @@ const Mobile = (
                       width={650}
                       height={450}
                       class="w-full h-full object-cover"
+                      loading={index === 0 ? "eager" : "lazy"}
                     />
                   </a>
                 </Slider.Item>
