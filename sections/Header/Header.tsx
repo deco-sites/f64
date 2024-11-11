@@ -44,6 +44,7 @@ interface CategoryItem {
 interface Category {
   icon: ImageWidget;
   name: string;
+  link: string;
   items: CategoryItem[][];
 }
 
@@ -159,12 +160,13 @@ const Desktop = (
             <div class="fixed left-0 top-0 w-full h-full bg-black/20 pointer-events-none opacity-0 z-10 [&:has(+div_[data-hover]:hover)]:opacity-100" />
 
             <div class="flex flex-col relative bg-white">
-              {categories.map(({ icon, name, items }) => {
+              {categories.map(({ icon, name, link, items }) => {
                 const chunks = chunk(items, 3);
 
                 return (
                   <div class="group w-fit">
-                    <div
+                    <a
+                      href={link}
                       data-hover
                       class="flex items-center gap-2 group/inner px-4 h-10 cursor-pointer bg-white relative hover:z-20 hover:pl-5 [&:has(+div:hover)]:z-20 [&:has(+div:hover)]:pl-5 w-[265px] peer group-first:h-12 group-last:h-12 group-first:pt-3 group-last:pb-3"
                     >
@@ -178,7 +180,7 @@ const Desktop = (
                       <span class="text-[#333] text-sm group-hover/inner:font-bold">
                         {name}
                       </span>
-                    </div>
+                    </a>
 
                     <div
                       data-hover

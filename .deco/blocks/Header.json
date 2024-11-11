@@ -1,2501 +1,2515 @@
 {
-    "__resolveType": "site/sections/Header/Header.tsx",
-    "searchbar": {
-        "placeholder": "Cauta dupa model, tipul produsului, caracteristici...",
-        "loader": {
-            "__resolveType": "resolved",
-            "data": null
-        }
-    },
-    "alerts": ["<p>Get 10% off today: <strong>NEW10</strong></p>"],
-    "logo": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/21b8e2ad-e59c-4587-abaa-83cbc5665281/logo___9d1376c867d721db63382866fdc95afb.svg",
-        "alt": "Deco Storefront",
-        "width": 135,
-        "height": 48
-    },
-    "navItems": [
-        {
-            "children": [
-                {
-                    "image": [],
-                    "children": [],
-                    "name": "Hello"
-                },
-                {
-                    "image": [],
-                    "children": [],
-                    "name": "World"
-                }
-            ],
-            "@type": "SiteNavigationElement",
-            "url": "/deals",
-            "name": "Deals",
-            "link": "/oferte-speciale",
-            "label": "Oferte"
-        },
-        {
-            "@type": "SiteNavigationElement",
-            "url": "/valentines-day",
-            "name": "Valentine's Day",
-            "children": [],
-            "label": "Cadouri",
-            "link": "/cadouri-f64?ref=hdr_cadouri"
-        },
-        {
-            "@type": "SiteNavigationElement",
-            "url": "/women",
-            "name": "Women",
-            "children": [],
-            "label": "Nou",
-            "link": "/noutati?map=productClusterNames&order=OrderByReleaseDateDESC"
-        },
-        {
-            "@type": "SiteNavigationElement",
-            "url": "/men",
-            "name": "Men",
-            "children": [],
-            "label": "Resigilate",
-            "link": "/3189?map=productClusterIds&order=OrderByReleaseDateDESC&ref=hdr_resigilate"
-        },
-        {
-            "@type": "SiteNavigationElement",
-            "url": "/clearance",
-            "name": "Clearance",
-            "children": [],
-            "label": "Cursuri",
-            "link": "https://academia.f64.ro/"
-        },
-        {
-            "@type": "SiteNavigationElement",
-            "url": "/activities",
-            "name": "Activities",
-            "children": [],
-            "label": "Consignatie",
-            "link": "https://www.f64.ro/servicii-depunere-in-consignatie?ref=hdr_consignatie"
-        },
-        {
-            "label": "Inchirieri",
-            "link": "https://www.rent.f64.ro/"
-        },
-        {
-            "label": "Printing",
-            "link": "https://print.f64.ro/ro/"
-        },
-        {
-            "label": "Blog",
-            "link": "https://blog.f64.ro/"
-        },
-        {
-            "label": "Contact",
-            "link": "/contact?ref=hdr_contact"
-        }
-    ],
-    "loading": "eager",
-    "tel": {
-        "label": "021.270.00.50",
-        "link": "tel: 0040212700050"
-    },
-    "categories": [
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Aparate Foto",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/42450856-5fca-489c-a331-886bc853ecb9/icon-photo-camera.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "1111 Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "1111 Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "2222 Aparate foto compacte"
-                    },
-                    {
-                        "name": "2222 Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Obiective Foto Video",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/8ff8b738-277c-455c-9655-48c0ce943543/icon-camera-lens.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Accesorii Foto Video",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/07eb9cb5-8614-4053-a17d-97d7229a3c0c/icon-film-strip.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Camere de Acțiune și Drone",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d406e81b-2224-471e-b6c8-226ceacc0f04/icon-drone.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Audio Video",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/0e2f4317-7d82-4747-81a5-6b9cb720809b/icon-camcorder.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Echipamente de Studio",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/5671a933-142a-4fc7-9216-1c7c30236f18/icon-light.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Telefoane și Gadget-uri",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/da29b814-8789-4bd0-8dae-60108b46e003/icon-smartphone.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Carduri și Memorii",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/a13e964a-4c5b-473c-bd59-2b9ae5f3c769/icon-cardurimemorie.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "PC și Editare",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d14eed7d-69f6-4fbf-b3db-4a7e9f64eb6f/icon-laptop.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Second Hand",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/830a2b6f-a998-41b2-ac1d-5e05d6341606/sh.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Electronice & Electrocasnice",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/dbc98f54-4606-4a7c-b223-0d8b424a930a/icon-TV.png"
-        },
-        {
-            "items": [
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-mirrorless",
-                        "name": "Aparate foto mirrorless"
-                    },
-                    {
-                        "name": "Începători",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
-                    },
-                    {
-                        "name": "Entuziaști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
-                    },
-                    {
-                        "name": "Profesioniști",
-                        "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
-                    }
-                ],
-                [
-                    {
-                        "link": "/aparate-foto/aparate-foto-compacte",
-                        "name": "Aparate foto compacte"
-                    },
-                    {
-                        "name": "Standard",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
-                    },
-                    {
-                        "name": "High-zoom",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
-                    },
-                    {
-                        "name": "Subacvatice",
-                        "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate foto dSLR",
-                        "link": "/aparate-foto/aparate-foto-dslr"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 5000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Aparate mirrorless sub 10000 lei",
-                        "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
-                    },
-                    {
-                        "name": "Oferte Sony",
-                        "link": "/oferte-sony"
-                    },
-                    {
-                        "name": "Oferte Canon",
-                        "link": "/oferte-canon"
-                    }
-                ],
-                [
-                    {
-                        "name": "Aparate Foto pe Film",
-                        "link": "/aparate-foto/aparate-foto-pe-film"
-                    },
-                    {
-                        "name": "Aparate pe Film Compacte",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
-                    },
-                    {
-                        "name": "Aparate Foto Instant",
-                        "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
-                    }
-                ],
-                [
-                    {
-                        "name": "Accesorii Aparate Foto",
-                        "link": "/accesorii-foto"
-                    },
-                    {
-                        "name": "Blituri Foto pe Patina",
-                        "link": "/accesorii-foto/blituri-foto-patina"
-                    },
-                    {
-                        "name": "Acumulatori Foto Dedicati",
-                        "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
-                    },
-                    {
-                        "name": "Carduri de Memorie",
-                        "link": "/accesorii-foto/carduri-de-memorie"
-                    },
-                    {
-                        "name": "Trepiede Foto",
-                        "link": "/accesorii-foto/trepiede-foto"
-                    },
-                    {
-                        "name": "Grip-uri",
-                        "link": "/accesorii-foto/grip-uri"
-                    },
-                    {
-                        "name": "Genți Foto",
-                        "link": "/accesorii-foto/genti"
-                    },
-                    {
-                        "name": "Curățare și Protecție",
-                        "link": "/accesorii-foto/accesorii-curatare-si-protectie"
-                    },
-                    {
-                        "name": "Curele",
-                        "link": "/accesorii-foto/curele"
-                    },
-                    {
-                        "name": "Declanșatoare",
-                        "link": "/accesorii-foto/telecomenzi-si-declansatoare"
-                    },
-                    {
-                        "name": "Fotografie pe Film",
-                        "link": "/accesorii-foto/fotografie-pe-film"
-                    },
-                    {
-                        "name": "Accesorii Diverse",
-                        "link": "/accesorii-foto/accesorii-diverse"
-                    }
-                ],
-                [
-                    {
-                        "name": "Inchirieri Foto",
-                        "link": "https://www.rent.f64.ro/"
-                    },
-                    {
-                        "link": "https://www.rent.f64.ro/",
-                        "name": "Închirieri Aparate Foto"
-                    }
-                ],
-                [
-                    {
-                        "name": "Second Hand",
-                        "link": "/Consignatie",
-                        "isPromo": true
-                    },
-                    {
-                        "name": "Aparate foto dSLR SH",
-                        "link": "/consignatie/aparate-foto-digitale--sh-"
-                    },
-                    {
-                        "name": "Aparate Foto SLR SH",
-                        "link": "/consignatie/aparate-foto-slr--film-"
-                    },
-                    {
-                        "name": "Aparate Mirrorless SH",
-                        "link": "/consignatie/aparate-foto-mirrorless--sh-"
-                    },
-                    {
-                        "name": "Aparate Compacte SH",
-                        "link": "/consignatie/aparate-foto-compacte--sh-"
-                    }
-                ],
-                [
-                    {
-                        "name": "Resigilate",
-                        "isPromo": true,
-                        "link": "/Resigilate"
-                    },
-                    {
-                        "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
-                        "name": "Aparate Foto Resigilate"
-                    }
-                ],
-                [
-                    {
-                        "name": "Cursuri Foto",
-                        "link": "https://academia.f64.ro/"
-                    },
-                    {
-                        "name": "Cursuri Online",
-                        "link": "https://academia.f64.ro/course-category/cursuri-online/"
-                    },
-                    {
-                        "name": "Cursuri Offline",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/"
-                    },
-                    {
-                        "name": "Cursuri Acreditate",
-                        "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
-                    },
-                    {
-                        "name": "Oferte cursuri online & offline",
-                        "link": "https://academia.f64.ro/ofertele-lunii/"
-                    }
-                ]
-            ],
-            "name": "Home, Travel & Hobby",
-            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/3103b13b-2af4-4d00-8ff3-22bdd0de8478/icon-home-travel.png"
-        }
-    ],
-    "banners": [
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/6db9b346-2013-433b-b344-f9d466602d87/a58a4628-e51a-4d80-8b3d-b4a8e4f56acb___3d78278fe221db863b3c3fa296689e87.webp",
-            "link": "/oferte-speciale"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/c111acc3-e08b-471a-b243-618303988bd6/7e48cc08-fa1e-4d67-9570-46dbadc3f689___0fc2040adaa84158dbd50e9c3d3f80f3.webp",
-            "link": "/7259?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/f4d0af9c-9d0d-4732-807b-e235beb592d1/569d995a-f3ff-4a74-ab89-dc188a93fa40___62ab8512176102fb4430a8c1af22d0b3.webp",
-            "link": "/7219?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/aca7e1c0-9d71-4c56-b035-57569ea4b57e/4b4eda77-ded0-4b0d-8c84-8ee7ab99b877___623ca1737ca0bd04ea4ba1540545ba66.webp",
-            "link": "/7209?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/b9bfc070-889a-4c27-9da6-bb455fb52cd5/7aa2b3a6-014e-42e6-afc6-d3a1d3eac4e1___07a0eb7811d0ea4d006ee430c201b313.webp",
-            "link": "/7032?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/beb483e2-8467-4478-9e70-63a6b9255225/581a0df2-9e42-494e-935f-ea58e1419ada___a900690a0893d186075e2acd23e7f8c1.webp",
-            "link": "/7250?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/05e2b60a-8b3e-4132-8fb7-8bf99069d589/99469298-9e6c-4417-834f-dece88b6d8c5___d5f1210b9160bd35c35f30118fd65e51.webp",
-            "link": "/7256?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/78798026-b7b7-4fbc-af0a-fb1d9a7ec53e/95d2145d-5a1f-4da1-bd8c-7befac94b17d___73cd33045159ed243af6864988e0940d.webp",
-            "link": "/oferte-panasonic"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/26b507c9-18c9-4234-bab1-1bf69457f2b8/73cd5767-ef04-4acc-845a-8efddc3b5020___6f4df0df02c714272a18ba47a05ac447.webp",
-            "link": "/oferte-nikon/mirrorless-z"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/e6fb50e1-7fc8-4433-bb8f-0f71cf8cfc52/a35e089c-3414-4765-b432-608177b0e292___e027708d670fa8661a8157716a4733e8.webp",
-            "link": "/oferte-sigma/cashback"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/f73cc17c-f8a4-4b2e-927e-4b34c06c78f0/1386ae49-2070-4920-a189-2e575126afd4___d33873ea9a2064724c4e6f182808788a.webp",
-            "link": "/7160?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d2980841-285b-46a3-b194-c58f98c04046/3198f993-3234-4a1c-85ee-82c34bf1a179___db1ffe60cc9dbde2de07a88b4e01bb7c.webp",
-            "link": "/7145?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/3f04edb7-cf11-407a-bba3-c1b745ff913f/dd0c8a68-22a4-4caa-aa3f-f3b4746cdea1___97868ab6c8af0c927288fb330fd88d11.webp",
-            "link": "/5882?fuzzy=0&map=productClusterIds"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d65d11ab-33be-4007-8c98-49fe21b9feea/9ac3c4d4-25c3-4ad8-9623-f43d08e74267___c101cf79ad27818a6b72728ba21a20fb.webp",
-            "link": "/aparat-foto-mirrorless-canon-eos-r5-mk2-corp-full-frame-45mpx-video-8k60p-6536c023aa/p"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/28d17bf5-2c2d-4158-bb4c-e83130e4318a/69d7679d-993f-407c-b193-a5dbbe07d69f___e27b5b7aac27d1e0e0e3b78c79bdc458.webp",
-            "link": "/oferte-epson/cashback"
-        },
-        {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/bfb0de7d-ae7b-4a0a-870d-ed9ed170be60/da39a27f-db4a-4ae3-bf71-75772753358a___d3c012313e84b83f63b29958870da8a3.webp",
-            "link": "/oferte-sony/cashback-pentru-studenti"
-        }
-    ],
-    "banner": [],
-    "logoMobile": {
-        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/215ec51e-7ec3-491e-b3f4-00e8d5d7a1d1/logo-mobile___b23bf1752e5214fb744fc4d483e0e452.svg",
-        "height": 30,
-        "width": 80
+  "__resolveType": "site/sections/Header/Header.tsx",
+  "searchbar": {
+    "placeholder": "Cauta dupa model, tipul produsului, caracteristici...",
+    "loader": {
+      "__resolveType": "resolved",
+      "data": null
     }
+  },
+  "alerts": [
+    "<p>Get 10% off today: <strong>NEW10</strong></p>"
+  ],
+  "logo": {
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/21b8e2ad-e59c-4587-abaa-83cbc5665281/logo___9d1376c867d721db63382866fdc95afb.svg",
+    "alt": "Deco Storefront",
+    "width": 135,
+    "height": 48
+  },
+  "navItems": [
+    {
+      "children": [
+        {
+          "image": [],
+          "children": [],
+          "name": "Hello"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "World"
+        }
+      ],
+      "@type": "SiteNavigationElement",
+      "url": "/deals",
+      "name": "Deals",
+      "link": "/oferte-speciale",
+      "label": "Oferte"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/valentines-day",
+      "name": "Valentine's Day",
+      "children": [],
+      "label": "Cadouri",
+      "link": "/cadouri-f64?ref=hdr_cadouri"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/women",
+      "name": "Women",
+      "children": [],
+      "label": "Nou",
+      "link": "/noutati?map=productClusterNames&order=OrderByReleaseDateDESC"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/men",
+      "name": "Men",
+      "children": [],
+      "label": "Resigilate",
+      "link": "/3189?map=productClusterIds&order=OrderByReleaseDateDESC&ref=hdr_resigilate"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/clearance",
+      "name": "Clearance",
+      "children": [],
+      "label": "Cursuri",
+      "link": "https://academia.f64.ro/"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/activities",
+      "name": "Activities",
+      "children": [],
+      "label": "Consignatie",
+      "link": "https://www.f64.ro/servicii-depunere-in-consignatie?ref=hdr_consignatie"
+    },
+    {
+      "label": "Inchirieri",
+      "link": "https://www.rent.f64.ro/"
+    },
+    {
+      "label": "Printing",
+      "link": "https://print.f64.ro/ro/"
+    },
+    {
+      "label": "Blog",
+      "link": "https://blog.f64.ro/"
+    },
+    {
+      "label": "Contact",
+      "link": "/contact?ref=hdr_contact"
+    }
+  ],
+  "loading": "eager",
+  "tel": {
+    "label": "021.270.00.50",
+    "link": "tel: 0040212700050"
+  },
+  "categories": [
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Aparate Foto",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/42450856-5fca-489c-a331-886bc853ecb9/icon-photo-camera.png",
+      "link": "/Aparate-foto"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "1111 Aparate foto mirrorless"
+          },
+          {
+            "name": "1111 Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "2222 Aparate foto compacte"
+          },
+          {
+            "name": "2222 Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Obiective Foto Video",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/8ff8b738-277c-455c-9655-48c0ce943543/icon-camera-lens.png",
+      "link": "/Obiective-foto"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Accesorii Foto Video",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/07eb9cb5-8614-4053-a17d-97d7229a3c0c/icon-film-strip.png",
+      "link": "/Accesorii-foto"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Camere de Acțiune și Drone",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d406e81b-2224-471e-b6c8-226ceacc0f04/icon-drone.png",
+      "link": "/Camere-de-actiune-si-drone"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Audio Video",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/0e2f4317-7d82-4747-81a5-6b9cb720809b/icon-camcorder.png",
+      "link": "/Camere-Video"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Echipamente de Studio",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/5671a933-142a-4fc7-9216-1c7c30236f18/icon-light.png",
+      "link": "/Echipamente-de-studio"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Telefoane și Gadget-uri",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/da29b814-8789-4bd0-8dae-60108b46e003/icon-smartphone.png",
+      "link": "/Telefoane-si-gadget-uri"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Carduri și Memorii",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/a13e964a-4c5b-473c-bd59-2b9ae5f3c769/icon-cardurimemorie.png",
+      "link": "/Accesorii-foto/Carduri-de-memorie"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "PC și Editare",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d14eed7d-69f6-4fbf-b3db-4a7e9f64eb6f/icon-laptop.png",
+      "link": "/PC-si-editare-foto-video"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Second Hand",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/830a2b6f-a998-41b2-ac1d-5e05d6341606/sh.png",
+      "link": "/Consignatie"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Electronice & Electrocasnice",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/dbc98f54-4606-4a7c-b223-0d8b424a930a/icon-TV.png",
+      "link": "/7158?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "items": [
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-mirrorless",
+            "name": "Aparate foto mirrorless"
+          },
+          {
+            "name": "Începători",
+            "link": "/aparate-foto/aparate-foto-mirrorless/incepatori"
+          },
+          {
+            "name": "Entuziaști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/entuziasti"
+          },
+          {
+            "name": "Profesioniști",
+            "link": "/aparate-foto/aparate-foto-mirrorless/profesionisti"
+          }
+        ],
+        [
+          {
+            "link": "/aparate-foto/aparate-foto-compacte",
+            "name": "Aparate foto compacte"
+          },
+          {
+            "name": "Standard",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-standard"
+          },
+          {
+            "name": "High-zoom",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-high-zoom"
+          },
+          {
+            "name": "Subacvatice",
+            "link": "/aparate-foto/aparate-foto-compacte/aparate-foto-compacte-subacvatice"
+          }
+        ],
+        [
+          {
+            "name": "Aparate foto dSLR",
+            "link": "/aparate-foto/aparate-foto-dslr"
+          },
+          {
+            "name": "Aparate mirrorless sub 5000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByPriceASC&priceRange=2799%20TO%205085&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Aparate mirrorless sub 10000 lei",
+            "link": "/aparate-foto/aparate-foto-mirrorless?initialMap=c,c&initialQuery=aparate-foto/aparate-foto-mirrorless&layout=four&map=category-1,category-2&order=OrderByTopSaleDESC&priceRange=2799%20TO%209800&query=/aparate-foto/aparate-foto-mirrorless&searchState"
+          },
+          {
+            "name": "Oferte Sony",
+            "link": "/oferte-sony"
+          },
+          {
+            "name": "Oferte Canon",
+            "link": "/oferte-canon"
+          }
+        ],
+        [
+          {
+            "name": "Aparate Foto pe Film",
+            "link": "/aparate-foto/aparate-foto-pe-film"
+          },
+          {
+            "name": "Aparate pe Film Compacte",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-pe-film-compacte"
+          },
+          {
+            "name": "Aparate Foto Instant",
+            "link": "/aparate-foto/aparate-foto-pe-film/aparate-foto-instant"
+          }
+        ],
+        [
+          {
+            "name": "Accesorii Aparate Foto",
+            "link": "/accesorii-foto"
+          },
+          {
+            "name": "Blituri Foto pe Patina",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "name": "Acumulatori Foto Dedicati",
+            "link": "https://www.f64.ro/accesorii-foto/acumulatori-foto-si-baterii"
+          },
+          {
+            "name": "Carduri de Memorie",
+            "link": "/accesorii-foto/carduri-de-memorie"
+          },
+          {
+            "name": "Trepiede Foto",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Grip-uri",
+            "link": "/accesorii-foto/grip-uri"
+          },
+          {
+            "name": "Genți Foto",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Curățare și Protecție",
+            "link": "/accesorii-foto/accesorii-curatare-si-protectie"
+          },
+          {
+            "name": "Curele",
+            "link": "/accesorii-foto/curele"
+          },
+          {
+            "name": "Declanșatoare",
+            "link": "/accesorii-foto/telecomenzi-si-declansatoare"
+          },
+          {
+            "name": "Fotografie pe Film",
+            "link": "/accesorii-foto/fotografie-pe-film"
+          },
+          {
+            "name": "Accesorii Diverse",
+            "link": "/accesorii-foto/accesorii-diverse"
+          }
+        ],
+        [
+          {
+            "name": "Inchirieri Foto",
+            "link": "https://www.rent.f64.ro/"
+          },
+          {
+            "link": "https://www.rent.f64.ro/",
+            "name": "Închirieri Aparate Foto"
+          }
+        ],
+        [
+          {
+            "name": "Second Hand",
+            "link": "/Consignatie",
+            "isPromo": true
+          },
+          {
+            "name": "Aparate foto dSLR SH",
+            "link": "/consignatie/aparate-foto-digitale--sh-"
+          },
+          {
+            "name": "Aparate Foto SLR SH",
+            "link": "/consignatie/aparate-foto-slr--film-"
+          },
+          {
+            "name": "Aparate Mirrorless SH",
+            "link": "/consignatie/aparate-foto-mirrorless--sh-"
+          },
+          {
+            "name": "Aparate Compacte SH",
+            "link": "/consignatie/aparate-foto-compacte--sh-"
+          }
+        ],
+        [
+          {
+            "name": "Resigilate",
+            "isPromo": true,
+            "link": "/Resigilate"
+          },
+          {
+            "link": "/3189?fuzzy=0&map=productClusterIds,departament&operator=and&query=/3189/aparate-foto",
+            "name": "Aparate Foto Resigilate"
+          }
+        ],
+        [
+          {
+            "name": "Cursuri Foto",
+            "link": "https://academia.f64.ro/"
+          },
+          {
+            "name": "Cursuri Online",
+            "link": "https://academia.f64.ro/course-category/cursuri-online/"
+          },
+          {
+            "name": "Cursuri Offline",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/"
+          },
+          {
+            "name": "Cursuri Acreditate",
+            "link": "https://academia.f64.ro/course-category/cursuri-offline/cursuri-acreditate/"
+          },
+          {
+            "name": "Oferte cursuri online & offline",
+            "link": "https://academia.f64.ro/ofertele-lunii/"
+          }
+        ]
+      ],
+      "name": "Home, Travel & Hobby",
+      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/3103b13b-2af4-4d00-8ff3-22bdd0de8478/icon-home-travel.png",
+      "link": "/7159?fuzzy=0&map=productClusterIds"
+    }
+  ],
+  "banners": [
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/6db9b346-2013-433b-b344-f9d466602d87/a58a4628-e51a-4d80-8b3d-b4a8e4f56acb___3d78278fe221db863b3c3fa296689e87.webp",
+      "link": "/oferte-speciale"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/c111acc3-e08b-471a-b243-618303988bd6/7e48cc08-fa1e-4d67-9570-46dbadc3f689___0fc2040adaa84158dbd50e9c3d3f80f3.webp",
+      "link": "/7259?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/f4d0af9c-9d0d-4732-807b-e235beb592d1/569d995a-f3ff-4a74-ab89-dc188a93fa40___62ab8512176102fb4430a8c1af22d0b3.webp",
+      "link": "/7219?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/aca7e1c0-9d71-4c56-b035-57569ea4b57e/4b4eda77-ded0-4b0d-8c84-8ee7ab99b877___623ca1737ca0bd04ea4ba1540545ba66.webp",
+      "link": "/7209?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/b9bfc070-889a-4c27-9da6-bb455fb52cd5/7aa2b3a6-014e-42e6-afc6-d3a1d3eac4e1___07a0eb7811d0ea4d006ee430c201b313.webp",
+      "link": "/7032?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/beb483e2-8467-4478-9e70-63a6b9255225/581a0df2-9e42-494e-935f-ea58e1419ada___a900690a0893d186075e2acd23e7f8c1.webp",
+      "link": "/7250?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/05e2b60a-8b3e-4132-8fb7-8bf99069d589/99469298-9e6c-4417-834f-dece88b6d8c5___d5f1210b9160bd35c35f30118fd65e51.webp",
+      "link": "/7256?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/78798026-b7b7-4fbc-af0a-fb1d9a7ec53e/95d2145d-5a1f-4da1-bd8c-7befac94b17d___73cd33045159ed243af6864988e0940d.webp",
+      "link": "/oferte-panasonic"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/26b507c9-18c9-4234-bab1-1bf69457f2b8/73cd5767-ef04-4acc-845a-8efddc3b5020___6f4df0df02c714272a18ba47a05ac447.webp",
+      "link": "/oferte-nikon/mirrorless-z"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/e6fb50e1-7fc8-4433-bb8f-0f71cf8cfc52/a35e089c-3414-4765-b432-608177b0e292___e027708d670fa8661a8157716a4733e8.webp",
+      "link": "/oferte-sigma/cashback"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/f73cc17c-f8a4-4b2e-927e-4b34c06c78f0/1386ae49-2070-4920-a189-2e575126afd4___d33873ea9a2064724c4e6f182808788a.webp",
+      "link": "/7160?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d2980841-285b-46a3-b194-c58f98c04046/3198f993-3234-4a1c-85ee-82c34bf1a179___db1ffe60cc9dbde2de07a88b4e01bb7c.webp",
+      "link": "/7145?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/3f04edb7-cf11-407a-bba3-c1b745ff913f/dd0c8a68-22a4-4caa-aa3f-f3b4746cdea1___97868ab6c8af0c927288fb330fd88d11.webp",
+      "link": "/5882?fuzzy=0&map=productClusterIds"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/d65d11ab-33be-4007-8c98-49fe21b9feea/9ac3c4d4-25c3-4ad8-9623-f43d08e74267___c101cf79ad27818a6b72728ba21a20fb.webp",
+      "link": "/aparat-foto-mirrorless-canon-eos-r5-mk2-corp-full-frame-45mpx-video-8k60p-6536c023aa/p"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/28d17bf5-2c2d-4158-bb4c-e83130e4318a/69d7679d-993f-407c-b193-a5dbbe07d69f___e27b5b7aac27d1e0e0e3b78c79bdc458.webp",
+      "link": "/oferte-epson/cashback"
+    },
+    {
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/bfb0de7d-ae7b-4a0a-870d-ed9ed170be60/da39a27f-db4a-4ae3-bf71-75772753358a___d3c012313e84b83f63b29958870da8a3.webp",
+      "link": "/oferte-sony/cashback-pentru-studenti"
+    }
+  ],
+  "banner": [],
+  "logoMobile": {
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/215ec51e-7ec3-491e-b3f4-00e8d5d7a1d1/logo-mobile___b23bf1752e5214fb744fc4d483e0e452.svg",
+    "height": 30,
+    "width": 80
+  }
 }
