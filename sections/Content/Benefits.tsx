@@ -1,5 +1,5 @@
-import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import { useDevice } from "@deco/deco/hooks";
+import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Section from "../../components/ui/Section.tsx";
 
 /**

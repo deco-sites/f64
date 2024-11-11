@@ -1,14 +1,14 @@
+import { useDevice } from "@deco/deco/hooks";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
+import Icon from "../ui/Icon.tsx";
 import WishlistButton from "../wishlist/WishlistButton.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
 import OutOfStock from "./OutOfStock.tsx";
-import Icon from "../ui/Icon.tsx";
-import { useDevice } from "@deco/deco/hooks";
 
 interface Props {
   page: ProductDetailsPage | null;

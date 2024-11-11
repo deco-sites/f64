@@ -10,6 +10,7 @@ export interface Props {
   aside: ComponentChildren;
   id?: string;
 }
+
 const script = (id: string) => {
   const handler = (e: KeyboardEvent) => {
     if (e.key !== "Escape" && e.keyCode !== 27) {
@@ -23,12 +24,13 @@ const script = (id: string) => {
   };
   addEventListener("keydown", handler);
 };
+
 function Drawer(
   { children, aside, open, class: _class = "", id = useId() }: Props,
 ) {
   return (
     <>
-      <div class={clx("drawer", _class)}>
+      <div class={clx("drawer drawer-end", _class)}>
         <input
           id={id}
           name={id}

@@ -1,67 +1,67 @@
 {
-  "seo": {
-    "type": "website",
-    "title": "Storefront",
-    "jsonLDs": [],
-    "noIndexing": false,
-    "description": "F64, magazinul pasionatilor de fotografie, va ofera cea mai variata gama de echipamente fotografice, aparate foto, camere video, obiective si accesorii.",
-    "titleTemplate": "%s - F64.ro",
-    "descriptionTemplate": "%s | F64.ro",
-    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/389e6341-b122-4245-af6a-f32c58233c47/rsz_favicon_f64_header.png"
-  },
-  "theme": {
-    "__resolveType": "Deco"
-  },
-  "global": [
-    {
-      "__resolveType": "htmx/sections/htmx.tsx"
+    "seo": {
+        "type": "website",
+        "title": "Storefront",
+        "jsonLDs": [],
+        "noIndexing": false,
+        "description": "F64, magazinul pasionatilor de fotografie, va ofera cea mai variata gama de echipamente fotografice, aparate foto, camere video, obiective si accesorii.",
+        "titleTemplate": "%s - F64.ro",
+        "descriptionTemplate": "%s | F64.ro",
+        "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/389e6341-b122-4245-af6a-f32c58233c47/rsz_favicon_f64_header.png"
     },
-    {
-      "__resolveType": "website/sections/Analytics/Analytics.tsx",
-      "dangerouslyRunOnMainThread": true,
-      "trackingIds": []
+    "theme": {
+        "__resolveType": "Deco"
     },
-    {
-      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+    "global": [
+        {
+            "__resolveType": "htmx/sections/htmx.tsx"
+        },
+        {
+            "__resolveType": "website/sections/Analytics/Analytics.tsx",
+            "dangerouslyRunOnMainThread": true,
+            "trackingIds": []
+        },
+        {
+            "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+        },
+        {
+            "__resolveType": "site/sections/Session.tsx",
+            "minicart": null,
+            "wishlist": null,
+            "mode": "lazy",
+            "user": null
+        }
+    ],
+    "routes": [
+        {
+            "__resolveType": "vtex/loaders/proxy.ts",
+            "extraPathsToProxy": [],
+            "includeSiteMap": [],
+            "excludePathsFromDecoSiteMap": []
+        },
+        {
+            "__resolveType": "website/loaders/pages.ts"
+        }
+    ],
+    "caching": {
+        "directives": []
     },
-    {
-      "__resolveType": "site/sections/Session.tsx",
-      "minicart": null,
-      "wishlist": null,
-      "mode": "lazy",
-      "user": null
+    "commerce": {
+        "platform": "other"
+    },
+    "platform": "vtex",
+    "__resolveType": "site/apps/site.ts",
+    "firstByteThresholdMS": false,
+    "abTesting": {
+        "replaces": [],
+        "includeScriptsToHead": {
+            "includes": []
+        },
+        "includeScriptsToBody": {
+            "includes": []
+        }
+    },
+    "flavor": {
+        "framework": "htmx"
     }
-  ],
-  "routes": [
-    {
-      "__resolveType": "vtex/loaders/proxy.ts",
-      "extraPathsToProxy": [],
-      "includeSiteMap": [],
-      "excludePathsFromDecoSiteMap": []
-    },
-    {
-      "__resolveType": "website/loaders/pages.ts"
-    }
-  ],
-  "caching": {
-    "directives": []
-  },
-  "commerce": {
-    "platform": "other"
-  },
-  "platform": "vtex",
-  "__resolveType": "site/apps/site.ts",
-  "firstByteThresholdMS": false,
-  "abTesting": {
-    "replaces": [],
-    "includeScriptsToHead": {
-      "includes": []
-    },
-    "includeScriptsToBody": {
-      "includes": []
-    }
-  },
-  "flavor": {
-    "framework": "htmx"
-  }
 }

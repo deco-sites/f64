@@ -18,7 +18,7 @@ function WishlistGallery(props: SectionProps<typeof loader>) {
       </div>
     );
   }
-  return <SearchResult {...props} />;
+  return <SearchResult {...props} view="grid" />;
 }
 export const loader = (props: Props, req: Request) => {
   return {

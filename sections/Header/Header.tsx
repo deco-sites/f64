@@ -1,8 +1,8 @@
+import { chunk } from "jsr:@std/collections";
 import type { LoadingFallbackProps } from "@deco/deco";
 import { useDevice } from "@deco/deco/hooks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { chunk } from "jsr:@std/collections";
 import Bag from "../../components/header/Bag.tsx";
 import Searchbar, {
   type SearchbarProps,

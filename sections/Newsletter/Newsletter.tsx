@@ -1,6 +1,6 @@
 import type { RichText } from "apps/admin/widgets.ts";
-import Section from "../../components/ui/Section.tsx";
 import Icon from "../../components/ui/Icon.tsx";
+import Section from "../../components/ui/Section.tsx";
 
 export interface Props {
   /**

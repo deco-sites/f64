@@ -1,8 +1,8 @@
+import { useDevice } from "@deco/deco/hooks";
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { useDevice } from "@deco/deco/hooks";
-import { useId } from "../../sdk/useId.ts";
 import Icon from "../../components/ui/Icon.tsx";
+import { useId } from "../../sdk/useId.ts";
 
 /**
  * @titleBy text
@@ -193,7 +193,7 @@ export default function Footer({ footerNav, left, right, bottom }: Props) {
 
         <div class="w-full h-px bg-[#696969]" />
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-4">
           {footerNav.map(({ title, items }) => {
             const id = useId();
 
@@ -203,7 +203,7 @@ export default function Footer({ footerNav, left, right, bottom }: Props) {
 
                 <label
                   for={id}
-                  class="font-bold text-lg text-[#d0d2de] group flex items-center justify-between"
+                  class="text-white group flex items-center justify-between"
                 >
                   {title}
                   <Icon
@@ -231,7 +231,7 @@ export default function Footer({ footerNav, left, right, bottom }: Props) {
 
         <div class="flex gap-4 mx-auto">
           {right.socials.map(({ icon, link }) => (
-            <a href={link}>
+            <a href={link} class="flex items-center">
               <Image src={icon} alt="" width={25} height={25} />
             </a>
           ))}
@@ -245,7 +245,9 @@ export default function Footer({ footerNav, left, right, bottom }: Props) {
       <div class="pt-4 pb-6 flex justify-center">
         <div class="flex items-center gap-3">
           {bottom.payments.map((image) => (
-            <img src={image} alt="" loading="lazy" class="object-contain" />
+            <div>
+              <img src={image} alt="" loading="lazy" class="object-contain" />
+            </div>
           ))}
         </div>
       </div>

@@ -1,11 +1,11 @@
 import { useScript } from "@deco/deco/hooks";
 import type { AnalyticsItem, Product } from "apps/commerce/types.ts";
 import type { JSX } from "preact";
+import { MINICART_DRAWER_ID } from "../../constants.ts";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import Icon from "../ui/Icon.tsx";
-import { MINICART_DRAWER_ID } from "../../constants.ts";
 
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
