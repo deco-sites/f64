@@ -1,3 +1,4 @@
+import { useDevice } from "@deco/deco/hooks";
 import type {
   Filter,
   FilterToggle,
@@ -6,11 +7,9 @@ import type {
 } from "apps/commerce/types.ts";
 import { parseRange } from "apps/commerce/utils/filters.ts";
 import { clx } from "../../sdk/clx.ts";
-import Print from "../../sdk/Print.tsx";
+import { useId } from "../../sdk/useId.ts";
 import PriceRange from "../PriceRange.tsx";
 import Icon from "../ui/Icon.tsx";
-import { useId } from "../../sdk/useId.ts";
-import { useDevice } from "@deco/deco/hooks";
 
 interface Props {
   filters: ProductListingPage["filters"];
@@ -118,8 +117,6 @@ function Filters({ filters, url }: Props) {
 
   return (
     <ul class={clx("flex flex-col relative", isDesktop && "gap-8 py-4")}>
-      <Print data={filters} />
-
       {filters.filter(isToggle).map((filter, index) => {
         if (isDesktop) {
           return (

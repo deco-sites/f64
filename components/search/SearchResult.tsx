@@ -2,6 +2,8 @@ import type { SectionProps } from "@deco/deco";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+import { getCookies } from "jsr:@std/http";
+import type { AppContext } from "../../apps/site.ts";
 import ProductCard from "../../components/product/ProductCard.tsx";
 import Filters from "../../components/search/Filters.tsx";
 import Icon from "../../components/ui/Icon.tsx";
@@ -9,12 +11,9 @@ import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
+import ScrollToTop from "../ScrollToTop.tsx";
 import Drawer from "../ui/Drawer.tsx";
 import Sort from "./Sort.tsx";
-import Print from "../../sdk/Print.tsx";
-import { getCookies } from "jsr:@std/http";
-import type { AppContext } from "../../apps/site.ts";
-import ScrollToTop from "../ScrollToTop.tsx";
 
 export interface Props {
   /** @title Integration */
@@ -81,7 +80,6 @@ function PageResult(props: SectionProps<typeof loader>) {
 
   const Products = (
     <>
-      <Print data={{ products }} />
       {products?.map((product, index) => (
         <ProductCard
           key={`product-card-${product.productID}`}
