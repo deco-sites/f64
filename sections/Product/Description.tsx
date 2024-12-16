@@ -40,7 +40,7 @@ export default function Description({ page }: Props) {
 
       <label
         for={id}
-        class="cursor-pointer h-11 bg-[#333] text-white flex items-center justify-center gap-2 px-5 absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 rounded text-sm group"
+        class="cursor-pointer h-11 bg-[#333] text-white flex items-center justify-center gap-2 px-5 absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 rounded text-sm group whitespace-nowrap"
       >
         <Icon
           id="plus"

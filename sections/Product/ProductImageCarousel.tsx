@@ -91,7 +91,7 @@ export default function ProductImageCarousel({ page }: Props) {
 
         <label
           for={seeMoreDescriptionId}
-          class="cursor-pointer h-11 bg-[#333] text-white flex items-center justify-center gap-2 px-5 absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 rounded text-sm"
+          class="cursor-pointer h-11 bg-[#333] text-white flex items-center justify-center gap-2 px-5 absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 rounded text-sm whitespace-nowrap"
         >
           <Icon
             id="plus"
@@ -125,9 +125,9 @@ export default function ProductImageCarousel({ page }: Props) {
 
               <div class="flex flex-col text-[#676976] text-sm">
                 {props.map(([name, value]) => (
-                  <div class="flex items-center even:bg-[#f8f8f8] py-2 px-3">
-                    <span class="w-1/4">{name}</span>
-                    <span class="flex-1">{value}</span>
+                  <div class="flex flex-col gap-1 lg:flex-row lg:items-center even:bg-[#f8f8f8] py-2 px-3">
+                    <span class="lg:w-1/4 max-lg:font-bold">{name}</span>
+                    <span class="lg:flex-1">{value}</span>
                   </div>
                 ))}
               </div>
