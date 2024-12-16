@@ -2,6 +2,7 @@ import { useDevice } from "@deco/deco/hooks";
 import type { ImageWidget, RichText } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../../components/ui/Icon.tsx";
+import Section from "../../components/ui/Section.tsx";
 import { useId } from "../../sdk/useId.ts";
 
 /**
@@ -254,3 +255,5 @@ export default function Footer({ footerNav, left, right, bottom }: Props) {
     </>
   );
 }
+
+export const LoadingFallback = () => <Section.Placeholder height="400px" />;

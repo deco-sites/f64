@@ -15,24 +15,30 @@ import * as $$$3 from "./loaders/user.ts";
 import * as $$$4 from "./loaders/wishlist.ts";
 import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$1 from "./sections/Component.tsx";
-import * as $$$$$$2 from "./sections/Content/Benefits.tsx";
-import * as $$$$$$3 from "./sections/Content/Blog.tsx";
-import * as $$$$$$4 from "./sections/Content/CategorySlider.tsx";
-import * as $$$$$$5 from "./sections/Content/ImageSlider.tsx";
-import * as $$$$$$6 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$7 from "./sections/Header/Header.tsx";
-import * as $$$$$$8 from "./sections/Images/Banner.tsx";
-import * as $$$$$$9 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$10 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$11 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$12 from "./sections/Product/Description.tsx";
-import * as $$$$$$13 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$14 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$15 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$16 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$17 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$18 from "./sections/Session.tsx";
-import * as $$$$$$19 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$2 from "./sections/Content/BannerWithVideo.tsx";
+import * as $$$$$$3 from "./sections/Content/Benefits.tsx";
+import * as $$$$$$4 from "./sections/Content/Blog.tsx";
+import * as $$$$$$5 from "./sections/Content/CategorySlider.tsx";
+import * as $$$$$$6 from "./sections/Content/ImageSlider.tsx";
+import * as $$$$$$7 from "./sections/Content/Video.tsx";
+import * as $$$$$$8 from "./sections/Empty.tsx";
+import * as $$$$$$9 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$10 from "./sections/Header/Header.tsx";
+import * as $$$$$$11 from "./sections/Images/Banner.tsx";
+import * as $$$$$$12 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$13 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$14 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$15 from "./sections/Product/Description.tsx";
+import * as $$$$$$16 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$17 from "./sections/Product/ProductHero.tsx";
+import * as $$$$$$18 from "./sections/Product/ProductImageCarousel.tsx";
+import * as $$$$$$19 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$20 from "./sections/Product/ProductWithImage.tsx";
+import * as $$$$$$21 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$22 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$23 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$24 from "./sections/Session.tsx";
+import * as $$$$$$25 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -45,24 +51,30 @@ const manifest = {
   "sections": {
     "site/sections/Category/CategoryBanner.tsx": $$$$$$0,
     "site/sections/Component.tsx": $$$$$$1,
-    "site/sections/Content/Benefits.tsx": $$$$$$2,
-    "site/sections/Content/Blog.tsx": $$$$$$3,
-    "site/sections/Content/CategorySlider.tsx": $$$$$$4,
-    "site/sections/Content/ImageSlider.tsx": $$$$$$5,
-    "site/sections/Footer/Footer.tsx": $$$$$$6,
-    "site/sections/Header/Header.tsx": $$$$$$7,
-    "site/sections/Images/Banner.tsx": $$$$$$8,
-    "site/sections/Images/Carousel.tsx": $$$$$$9,
-    "site/sections/Images/ShoppableBanner.tsx": $$$$$$10,
-    "site/sections/Newsletter/Newsletter.tsx": $$$$$$11,
-    "site/sections/Product/Description.tsx": $$$$$$12,
-    "site/sections/Product/ProductDetails.tsx": $$$$$$13,
-    "site/sections/Product/ProductShelf.tsx": $$$$$$14,
-    "site/sections/Product/SearchResult.tsx": $$$$$$15,
-    "site/sections/Product/ShelfWithImage.tsx": $$$$$$16,
-    "site/sections/Product/Wishlist.tsx": $$$$$$17,
-    "site/sections/Session.tsx": $$$$$$18,
-    "site/sections/Theme/Theme.tsx": $$$$$$19,
+    "site/sections/Content/BannerWithVideo.tsx": $$$$$$2,
+    "site/sections/Content/Benefits.tsx": $$$$$$3,
+    "site/sections/Content/Blog.tsx": $$$$$$4,
+    "site/sections/Content/CategorySlider.tsx": $$$$$$5,
+    "site/sections/Content/ImageSlider.tsx": $$$$$$6,
+    "site/sections/Content/Video.tsx": $$$$$$7,
+    "site/sections/Empty.tsx": $$$$$$8,
+    "site/sections/Footer/Footer.tsx": $$$$$$9,
+    "site/sections/Header/Header.tsx": $$$$$$10,
+    "site/sections/Images/Banner.tsx": $$$$$$11,
+    "site/sections/Images/Carousel.tsx": $$$$$$12,
+    "site/sections/Images/ShoppableBanner.tsx": $$$$$$13,
+    "site/sections/Newsletter/Newsletter.tsx": $$$$$$14,
+    "site/sections/Product/Description.tsx": $$$$$$15,
+    "site/sections/Product/ProductDetails.tsx": $$$$$$16,
+    "site/sections/Product/ProductHero.tsx": $$$$$$17,
+    "site/sections/Product/ProductImageCarousel.tsx": $$$$$$18,
+    "site/sections/Product/ProductShelf.tsx": $$$$$$19,
+    "site/sections/Product/ProductWithImage.tsx": $$$$$$20,
+    "site/sections/Product/SearchResult.tsx": $$$$$$21,
+    "site/sections/Product/ShelfWithImage.tsx": $$$$$$22,
+    "site/sections/Product/Wishlist.tsx": $$$$$$23,
+    "site/sections/Session.tsx": $$$$$$24,
+    "site/sections/Theme/Theme.tsx": $$$$$$25,
   },
   "actions": {
     "site/actions/minicart/submit.ts": $$$$$$$$$0,

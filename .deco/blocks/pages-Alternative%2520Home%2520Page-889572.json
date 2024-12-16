@@ -1,0 +1,294 @@
+{
+  "name": "Alternative Home Page",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Seo/SeoV2.tsx",
+      "title": "F64.ro - Magazinul pasionatilor de fotografie.",
+      "description": "F64, magazinul pasionatilor de fotografie, va ofera cea mai variata gama de echipamente fotografice, aparate foto, camere video, obiective si accesorii."
+    },
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductWithImage.tsx",
+        "product": {
+          "__resolveType": "vtex/loaders/workflow/product.ts",
+          "productID": "1"
+        },
+        "products": {
+          "props": {
+            "ids": [
+              "342938"
+            ]
+          },
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+        },
+        "bannerDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/6195c9da-b2f1-4cfe-8c01-ee8f70710efc/b73feb53-9ac3-4f00-946b-6d510dad0405___c5391585c7c2b059dd1bf80726792779.webp",
+        "bannerMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/3d0e9bb9-5784-423d-967d-681831470189/56012c90-5021-4198-932e-a79d8c4b6c43___47dca3fc2435082bce852fae0a17098b.webp"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/BannerWithVideo.tsx",
+        "desktopImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/1e72b3f1-9d36-4f63-b851-9470be16a00d/87084092-c24a-4623-844d-35a703235fd8___70a956b1acb728b5aa902ebbc17d34c1.webp",
+        "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/1e72b3f1-9d36-4f63-b851-9470be16a00d/87084092-c24a-4623-844d-35a703235fd8___70a956b1acb728b5aa902ebbc17d34c1.webp",
+        "videoDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/bc0d76da-b980-429b-964c-f435e9194f4c/4208097-hd_1920_1080_25fps.mp4",
+        "videoMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/bc0d76da-b980-429b-964c-f435e9194f4c/4208097-hd_1920_1080_25fps.mp4"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductHero.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "ids": [
+              "336119",
+              "345801",
+              "347705"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "Special pentru tine",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "fuzzy": "automatic",
+            "query": "sandisk",
+            "count": 10
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/CategorySlider.tsx",
+        "title": "Categorii recomandate",
+        "categories": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/b5356bd8-3305-42e2-8097-674a9317451c/icon-aparate-fotov2.png",
+            "name": "Aparate mirrorless",
+            "link": "/aparate-foto/aparate-foto-mirrorless"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/34d854ca-133f-4545-933b-43c6a68fc5c5/icon-obiectivev2.png",
+            "name": "Obiective dSLR",
+            "link": "/obiective-foto/obiective-foto-dslr"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/c02ea058-dcc8-40a8-8816-62f46a38aae6/icon-camere-de-actiunev2.png",
+            "name": "Camere de actiune",
+            "link": "/camere-de-actiune-si-drone/camere-de-actiune"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/476ef9c8-6a5a-427f-91bb-8f43fcea1753/icon-dronev2.png",
+            "name": "Drone",
+            "link": "/camere-de-actiune-si-drone/drone"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/b44bb4a9-aa84-481e-b60c-456cfca86817/icon-telefoanev2.png",
+            "name": "Telefoane",
+            "link": "/telefoane-si-gadget-uri/telefoane-mobile"
+          },
+          {
+            "link": "/accesorii-foto/carduri-de-memorie",
+            "name": "Memorii",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/8cc3e2ea-225d-43f8-a196-128c6814bc4e/icon-memorii22.png"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/c120f573-28f1-432c-9b0b-fd213dfee42c/icon-blitz-uriv2.png",
+            "name": "Blitz-uri",
+            "link": "/accesorii-foto/blituri-foto-patina"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/e5c473d6-d1da-4764-a40f-dcf75f41453e/icon-gentiv2.png",
+            "name": "Genti",
+            "link": "/accesorii-foto/genti"
+          },
+          {
+            "name": "Trepiede",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/44aa2121-0700-4f6a-bdcc-3ab135584401/icon-trepidev2.png",
+            "link": "/accesorii-foto/trepiede-foto"
+          },
+          {
+            "name": "Vlogging",
+            "link": "/vlogging",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/0b1a2646-4fa6-4f2e-ba3d-34cb6548af6b/icon-vlogging2.png"
+          },
+          {
+            "name": "Podcast",
+            "link": "/podcast",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/c2c80fdc-eac2-48d6-adae-f87bb3b97827/icon-podcast2.png"
+          },
+          {
+            "name": "Acumulatori",
+            "link": "/accesorii-foto/acumulatori-foto-si-baterii",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/530577d9-f121-445f-9cdf-a644f34bc1d2/icon-acumulatoriv2.png"
+          },
+          {
+            "name": "Incarcatoare",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/e9c1ed2c-981c-4b01-aa90-a1c96629f947/icon-incarcatoarev2.png",
+            "link": "/accesorii-foto/incarcatoare-acumulatori-foto"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Banner.tsx",
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/4478f542-084b-44b0-a97a-3a7f7f698e67/LP-mobile-VIDEO-CONSULTANTA2-625x300___318028dc922b60efe0191ffbc11af79d.webp",
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/902d60dd-3766-4b5a-81c9-404648d85f8a/LP-1250x150-VIDEO-CONSULTANTA2___094ee001167f4f8cca9358abe38c981e.webp",
+        "alt": "A cool banner",
+        "link": "/consultanta"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/ImageSlider.tsx",
+        "title": "Branduri de top",
+        "items": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/876bd606-ac86-4107-b337-0a8889abe66a/Canon_tagline_logo___773f76429332e79876dbc2fa5943c880.webp",
+            "alt": "Canon",
+            "link": "/oferte-canon"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/40d02f19-7529-41c5-8fda-cb96f6f22fc0/Elinchrom_tagline_logo___190045dff09be16f122af53dffcde54f.webp",
+            "alt": "elinchrom",
+            "link": "/elinchrom"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/fa018c12-5ea9-4d5b-9723-6b0974b7b099/Epson_tagline_logo___55b1f18397f41fc52bf0abb465f0590d.webp",
+            "alt": "epson",
+            "link": "/oferte-epson"
+          },
+          {
+            "link": "/oferte-fujifilm",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/58047089-f315-4ec3-9dc7-37b0793516cd/Fujifilm_tagline_logo___c515719ede172556052a390bf577dde4.webp",
+            "alt": "fujifilm"
+          },
+          {
+            "link": "/oferte-godox",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/e1bedf72-b96b-432d-831b-29fca7462720/Godox_tagline_logo___0414148c080867fe4c320382cb969188.webp",
+            "alt": "godox"
+          },
+          {
+            "link": "/hoya",
+            "alt": "hoya",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/652f4be4-5cd9-46db-ad36-2d5246662835/Hoya_tagline_logo___0a93f3b6ae4bd9073e951ef1b2c17b00.webp"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/019dcd02-4d49-43e9-8149-325fe212f8d7/Leica_tagline_logo___b234b90bdc9dd2929643e66a1055de97.webp",
+            "alt": "leica",
+            "link": "/leica"
+          },
+          {
+            "alt": "metz",
+            "link": "/metz",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/8e9f4d07-e029-4bd4-bac4-d431bb9b521f/Metz_tagline_logo___772f3f305e3e4d5b6d51d6459cff2c28.webp"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/e56cb0d1-0c98-4803-9304-6b2875e1dbd8/Nikon_tagline_logo___3bda6a2fa239b43ed1fb276b78dc2a6b.webp",
+            "alt": "nikon",
+            "link": "/oferte-nikon"
+          },
+          {
+            "link": "/oferte-panasonic",
+            "alt": "panasonic",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/ecf99ba3-7a20-4161-9e71-7ac7ee1683ef/Panasonic_tagline_logo___b0097895ae5feccc3e1af715efdf4383.webp"
+          },
+          {
+            "link": "/studio-profoto",
+            "alt": "profoto",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/329beab6-60b3-4c30-8cf9-85ce1d4823a8/Profoto_tagline_logo___dd97a8cef2b669981c11824bd8e953dc.webp"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/69327f8b-bc2c-4db8-a600-cce2f0f7067b/Sigma_tagline_logo___e4f57a2ae71275ba681d30b1b2a4b1e6.webp",
+            "link": "/oferte-sigma",
+            "alt": "sigma"
+          },
+          {
+            "link": "/oferte-sony",
+            "alt": "sony",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/91e5359a-fdca-4ee4-8f75-b068f20c3aeb/Sony_tagline_logo___f885121ab9b388fd1ec6847910b24f5c.webp"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Banner.tsx",
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/3e640f2f-4901-45ef-bea5-7848c92144ca/ffe2d0b1-eded-4511-a720-1e712a41684c___a12b3ee5ee17af0140bef3c9514a5811.webp",
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/8a554a02-e782-4df8-aa3f-4fea8daa852b/8c68e514-6a27-46b0-9c12-0ff62a7eef86___e7fbe6a9f40d6c2f46569f2075f17120.webp",
+        "alt": "A cool banner",
+        "link": "/oferte-rate"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/Blog.tsx",
+        "title": "Articole din blog",
+        "items": [
+          {
+            "title": "Nu rata Bucharest Photofest 2024!",
+            "description": "Cea de-a noua ediție a Bucharest Photofest, festivalul platformă ce își propune să transforme fotografia într-un instrument de educație vizuală și să faciliteze accesul publicului larg la unele dintre cele mai importante, actuale și relevante repere din fotografia autohtonă și internațională, s-a deschis pe 11 octombrie la Galeria Scemtovici & Benowitz. Cu o agendă impresionantă",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/4f162084-e883-4e9a-96a8-630b486da79c/cover-blog-bpf-1.jpg",
+            "link": "https://blog.f64.ro/2024/10/14/nu-rata-bucharest-photo-fest-2024/"
+          },
+          {
+            "title": "Cum a fost la workshop-ul de fotografie de culise, cu Gina Buliga, Nikon Z8 Creator",
+            "description": "Pe 16 septembrie a avut loc ultimul workshop de fotografie din cadrul campaniei Creatorilor Nikon Z8. Impreuna cu Gina Buliga si Frame Film, noi, cei de la Nikon Romania, am organizat un eveniment specializat pe fotografia de culise in care 8 participanti au putut testa noul Nikon Z 8. Evenimentul ”Dincolo de ecran. Experienta fotografiei de culise in direct” a avut loc pe platoul de filmare al serialului ”Las Fierbinti”, cu sprijinul Frame Film.",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/4518803a-2d1e-4907-8d00-f55e18791044/COVER-BLOG-890x390-workshop-gina-buliga2.jpg",
+            "link": "https://blog.f64.ro/2024/10/09/cum-a-fost-la-workshop-ul-de-fotografie-de-culise-cu-gina-buliga-nikon-z8-creator/"
+          },
+          {
+            "title": "Canon lansează SELPHY QX20, o nouă imprimantă foto color portabilă",
+            "description": "Canon Europe extinde gama de imprimante portabile prin lansarea imprimantei SELPHY QX20, un model cu performanţe ridicate, care le permite utilizatorilor să îşi exploreze creativitatea în moduri noi. Adaptată pentru cele mai răspândite formate de pe reţelele de socializare, noua imprimantă oferă acum compatibilitate şi cu hârtie în format 2:3 sau în format pătrat1 şi",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/1cc6c0a9-9b1e-43a8-a6df-d1e807f57f04/Canon-SELPHY-QX20_1-e1728382759604.jpg",
+            "link": "https://blog.f64.ro/2024/10/08/canon-lanseaza-selphy-qx20-o-noua-imprimanta-foto-color-portabila/"
+          },
+          {
+            "title": "Nu rata workshopurile gratuite SONY din octombrie!",
+            "description": "În perioada 16-23 octombrie, revenim cu o nouă serie de evenimente speciale, dedicate pasionaților de fotografie si creare de conținut/vlogging, organizate împreună cu partenerul nostru Sony România. Ce te așteaptă? Sfaturi utile pentru fotografia de studio/portret, precum si despre crearea de conținut atât de necesară în zilele noastre. În plus, vom descoperi echipamentele Sony și le",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/534bdfd8-f046-4bcb-86c9-0ca12ecba6e1/COVER-BLOG-890x390-EVENTS-SONY-OCT.jpg",
+            "link": "https://blog.f64.ro/2024/10/02/nu-rata-workshopurile-gratuite-sony-din-octombrie/"
+          }
+        ],
+        "blogPage": "https://blog.f64.ro/"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Newsletter"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "path": "/alternative-home",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  }
+}

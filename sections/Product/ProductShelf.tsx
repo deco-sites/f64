@@ -7,6 +7,7 @@ import Section, {
 } from "../../components/ui/Section.tsx";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
+import Print from "../../sdk/Print.tsx";
 
 export interface Props extends SectionHeaderProps {
   products: Product[] | null;
@@ -35,6 +36,7 @@ export default function ProductShelf({ products, title }: Props) {
   });
   return (
     <div {...viewItemListEvent} class="mb-11 container flex flex-col gap-1">
+      <Print data={products} />
       <Section.Header title={title} />
 
       <div class="px-5">

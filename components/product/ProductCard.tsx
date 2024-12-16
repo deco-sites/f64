@@ -1,9 +1,10 @@
+import { useDevice } from "@deco/deco/hooks";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
-import { useDevice } from "@deco/deco/hooks";
 import { clx } from "../../sdk/clx.ts";
 import parsePrice from "../../sdk/parsePrice.ts";
+import Print from "../../sdk/Print.tsx";
 import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
@@ -24,6 +25,7 @@ interface Props {
 
   class?: string;
   view?: "grid" | "list";
+  variant?: "product-hero";
 }
 
 const GRID_WIDTH = 287;
@@ -35,8 +37,15 @@ const LIST_HEIGHT = 130;
 const LIST_ASPECT_RATIO = `${LIST_WIDTH} / ${LIST_HEIGHT}`;
 
 function ProductCard(
-  { product, preload, itemListName, index, class: _class, view = "grid" }:
-    Props,
+  {
+    product,
+    preload,
+    itemListName,
+    index,
+    class: _class,
+    view = "grid",
+    variant,
+  }: Props,
 ) {
   const { url, image: images, offers, isVariantOf } = product;
   const title = isVariantOf?.name ?? product.name;
@@ -52,6 +61,15 @@ function ProductCard(
   const relativeUrl = relative(url);
 
   const isDesktop = useDevice() === "desktop";
+
+  const properties = isVariantOf?.additionalProperty ?? [];
+  const MIN_PROPERTIES = Math.min(5, properties.length);
+
+  const randomPropertiesIndex = new Set<number>();
+
+  while (randomPropertiesIndex.size < MIN_PROPERTIES) {
+    randomPropertiesIndex.add(Math.floor(Math.random() * properties.length));
+  }
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
   const event = useSendEvent({
@@ -74,28 +92,29 @@ function ProductCard(
         {...event}
         data-product
         class={clx(
-          "flex flex-col gap-2.5 p-2.5 shadow-[0_10px_20px_0_rgb(51_52_59_/_5%)] bg-white",
+          "flex gap-2.5 p-2.5 shadow-[0_10px_20px_0_rgb(51_52_59_/_5%)] bg-white",
+          variant === "product-hero" ? "shrink-0" : "flex-col",
           _class,
         )}
       >
+        <Print data={[...randomPropertiesIndex]} />
         <figure
           class={clx(
-            "relative bg-base-200",
-            "rounded border border-transparent",
-            "group-hover:border-primary",
+            "relative rounded shrink-0 flex items-center justify-center",
+            variant === "product-hero" &&
+              "max-[500px]:w-[100px] max-lg:w-[200px] flex-1",
           )}
-          style={{ aspectRatio: GRID_ASPECT_RATIO }}
+          style={{
+            aspectRatio: variant === "product-hero"
+              ? undefined
+              : GRID_ASPECT_RATIO,
+          }}
         >
           {/* Product Images */}
           <a
             href={relativeUrl}
             aria-label="view product"
-            class={clx(
-              "absolute top-0 left-0",
-              "grid grid-cols-1 grid-rows-1",
-              "w-full",
-              !inStock && "opacity-70",
-            )}
+            class={clx(!inStock && "opacity-70")}
           >
             <Image
               src={front.url!}
@@ -103,11 +122,7 @@ function ProductCard(
               width={GRID_WIDTH}
               height={GRID_HEIGHT}
               style={{ aspectRatio: GRID_ASPECT_RATIO }}
-              class={clx(
-                "object-cover",
-                "rounded w-full",
-                "col-span-full row-span-full",
-              )}
+              class="object-cover rounded"
               sizes="(max-width: 640px) 50vw, 20vw"
               preload={preload}
               loading={preload ? "eager" : "lazy"}
@@ -116,40 +131,89 @@ function ProductCard(
           </a>
         </figure>
 
-        <a href={relativeUrl} class="flex flex-col gap-2.5 flex-1">
-          <h2 class="text-sm line-clamp-4 text-ellipsis leading-4 text-[#33343b]">
-            {title}
-          </h2>
-          <div class="flex-grow" />
-          <div class="flex flex-col items-start gap-1">
-            {listPrice > price && (
-              <div class="flex items-center gap-1 relative group">
-                <div class="size-3 bg-[#f68e1e] rounded-full text-white text-[8px] font-bold flex justify-center items-center">
-                  i
-                </div>
+        <div
+          class={clx(
+            "flex flex-col justify-center gap-2.5 flex-1",
+            variant === "product-hero" && "w-1/2",
+          )}
+        >
+          <a href={relativeUrl} class="flex flex-col gap-2.5">
+            <h2
+              class={clx(
+                "text-ellipsis text-[#33343b] lg:max-w-[300px]",
+                variant === "product-hero"
+                  ? "line-clamp-3 text-lg/6 font-medium"
+                  : "line-clamp-4 text-sm/4",
+              )}
+            >
+              {title}
+            </h2>
+            {variant === "product-hero" && (
+              <div class="flex flex-col gap-1">
+                {[...randomPropertiesIndex].map((i) => {
+                  const property = properties[i];
 
-                <div class="min-w-32 absolute -left-[12%] text-white bg-[#333] -top-2 -translate-y-full p-5 text-sm transition-opacity shadow-[0_1px_8px_rgba(0,0,0,.5)] pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto z-10">
-                  Pretul anterior
-                </div>
-
-                <span class="text-[#777] text-xs">
-                  {parsedListPrice.int},
-                  <span class="text-[10px] inline-block -translate-y-0.5">
-                    {parsedListPrice.cents}
-                  </span>{" "}
-                  lei
-                </span>
+                  return (
+                    <span class="text-xs text-[#33343b] lg:max-w-[300px] truncate">
+                      <span class="font-bold">{property.name}:</span>
+                      {property.value}
+                    </span>
+                  );
+                })}
               </div>
             )}
-            <span class="font-bold text-[#f68e1e]">
-              {parsedPrice.int},
-              <span class="text-sm inline-block -translate-y-1">
-                {parsedPrice.cents}
-              </span>{" "}
-              lei
-            </span>
-          </div>
-        </a>
+            {variant !== "product-hero" && <div class="flex-grow" />}
+            <div class="flex flex-col items-start gap-1">
+              {listPrice > price && (
+                <div class="flex items-center gap-1 relative group">
+                  <div class="size-3 bg-[#f68e1e] rounded-full text-white text-[8px] font-bold flex justify-center items-center">
+                    i
+                  </div>
+
+                  <div class="min-w-32 absolute -left-[12%] text-white bg-[#333] -top-2 -translate-y-full p-5 text-sm transition-opacity shadow-[0_1px_8px_rgba(0,0,0,.5)] pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto z-10">
+                    Pretul anterior
+                  </div>
+
+                  <span class="text-[#777] text-xs">
+                    {parsedListPrice.int},
+                    <span class="text-[10px] inline-block -translate-y-0.5">
+                      {parsedListPrice.cents}
+                    </span>{" "}
+                    lei
+                  </span>
+                </div>
+              )}
+              <span
+                class={clx(
+                  "font-bold text-[#f68e1e]",
+                  variant === "product-hero" && "max-lg:text-xl text-lg",
+                )}
+              >
+                {parsedPrice.int},
+                <span
+                  class={clx(
+                    "inline-block -translate-y-1",
+                    variant === "product-hero" ? "max-lg:text-lg" : "text-sm",
+                  )}
+                >
+                  {parsedPrice.cents}
+                </span>{" "}
+                lei
+              </span>
+            </div>
+          </a>
+          {variant === "product-hero" && (
+            <div>
+              <AddToCartButton
+                item={item}
+                seller={seller}
+                product={product}
+                class="bg-[#f68e1e] hover:bg-[#f0810b] disabled:bg-[#c36909] transition-colors w-full h-14 lg:h-10 rounded-md text-sm text-white flex justify-center items-center gap-2"
+                disabled={false}
+              />
+            </div>
+          )}
+        </div>
       </div>
     );
   }

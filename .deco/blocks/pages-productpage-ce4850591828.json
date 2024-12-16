@@ -1,58 +1,139 @@
 {
-    "name": "Product Page",
-    "path": "/:slug/p",
-    "default": {
-        "possiblePaths": []
+  "name": "Product Page",
+  "path": "/:slug/p",
+  "default": {
+    "possiblePaths": []
+  },
+  "sections": [
+    {
+      "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx",
+      "jsonLD": {
+        "__resolveType": "PDP Loader"
+      },
+      "jsonLDs": [
+        {}
+      ]
     },
-    "sections": [
-        {
-            "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx",
-            "jsonLD": {
-                "__resolveType": "PDP Loader"
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/Content/Video.tsx",
+              "videoDesktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/1044f174-426d-4f1d-9f9b-683c5496a6e9/3888252-uhd_2732_1440_25fps.mp4",
+              "videoMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/f64/1044f174-426d-4f1d-9f9b-683c5496a6e9/3888252-uhd_2732_1440_25fps.mp4",
+              "fullWidth": true
             },
-            "jsonLDs": [{}]
-        },
-        {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-                "__resolveType": "Header"
-            }
-        },
-        {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-                "__resolveType": "site/sections/Product/ProductDetails.tsx",
-                "page": {
-                    "__resolveType": "PDP Loader"
+            "rule": {
+              "__resolveType": "website/matchers/queryString.ts",
+              "conditions": [
+                {
+                  "case": {
+                    "type": "Exists"
+                  },
+                  "param": "q"
                 }
+              ]
             }
-        },
-        {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-                "__resolveType": "site/sections/Product/ProductShelf.tsx",
-                "title": "Produse asemanatoare",
-                "products": {
-                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-                    "props": {
-                        "query": "sony",
-                        "count": 10
-                    }
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/Empty.tsx"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
+          {
+            "value": {
+              "__resolveType": "site/sections/Product/ProductImageCarousel.tsx",
+              "page": {
+                "__resolveType": "PDP Loader"
+              }
+            },
+            "rule": {
+              "__resolveType": "website/matchers/queryString.ts",
+              "conditions": [
+                {
+                  "case": {
+                    "type": "Exists"
+                  },
+                  "param": "q"
                 }
+              ]
             }
-        },
-        {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-                "__resolveType": "Newsletter"
+          },
+          {
+            "value": {
+              "__resolveType": "site/sections/Empty.tsx"
+            },
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
             }
-        },
-        {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-                "__resolveType": "Footer"
-            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductDetails.tsx",
+        "page": {
+          "__resolveType": "PDP Loader"
         }
-    ],
-    "__resolveType": "website/pages/Page.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/Description.tsx",
+        "page": {
+          "__resolveType": "PDP Loader"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "Produse asemanatoare",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "query": "sony",
+            "count": 10
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Newsletter"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
 }
